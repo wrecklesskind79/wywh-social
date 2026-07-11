@@ -122,6 +122,20 @@ img {
   box-shadow: 0 6px 15px rgba(216, 115, 76, 0.4);
 }
 
+.btn-navy {
+  background-color: var(--navy);
+  color: var(--white);
+  box-shadow: 0 4px 10px rgba(28, 43, 74, 0.25);
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+
+.btn-navy:hover {
+  background-color: var(--navy-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(28, 43, 74, 0.35);
+}
+
 .btn-outline {
   background-color: transparent;
   border-color: var(--navy);
@@ -164,20 +178,34 @@ header {
 .logo-block {
   display: flex;
   flex-direction: column;
+  align-items: flex-start;
 }
 
-.logo-block .logo {
-  font-size: 1.5rem;
+.logo-block .logo-top {
+  font-size: 0.55rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--navy-soft);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.logo-block .logo-main {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
   color: var(--navy);
-  line-height: 1.1;
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 1px;
 }
 
 .logo-block .logo-sub {
   font-size: 0.65rem;
   letter-spacing: 4px;
-  color: var(--coral);
+  color: var(--navy-soft);
   font-weight: 700;
-  margin-top: 2px;
+  margin-top: 1px;
+  line-height: 1;
 }
 
 .nav-links {
@@ -246,81 +274,187 @@ header {
    Hero Section
    ------------------------------------------------------------- */
 .hero-section {
-  padding: 80px 0 120px;
+  padding: 60px 0 100px;
   position: relative;
 }
 
-.hero-container {
-  max-width: 1200px;
+.hero-container-stacked {
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 24px;
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: 64px;
+  display: flex;
+  flex-direction: column;
   align-items: center;
 }
 
-.hero-copy h1 {
-  font-size: 3.8rem;
-  line-height: 1.05;
-  color: var(--navy);
-  margin-bottom: 24px;
-}
-
-.hero-copy p {
-  font-size: 1.15rem;
-  color: var(--navy-soft);
-  max-width: 480px;
+/* Center Visual Collage Area */
+.hero-visual-stacked {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  height: 520px;
   margin-bottom: 40px;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 16px;
-  flex-wrap: wrap;
-}
-
-.hero-visual {
-  position: relative;
-  height: 480px;
-  width: 100%;
-}
-
-/* Organic paint stroke behind Ashley's photo */
-.paint-stroke-bg {
+/* Paint stroke backing */
+.paint-stroke-bg-stacked {
   position: absolute;
-  top: 10px;
-  left: 10px;
-  width: 78%;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1.5deg);
+  width: 82%;
   height: 380px;
   background: linear-gradient(135deg, var(--navy-soft) 0%, var(--navy) 100%);
-  border-radius: 40% 60% 70% 30% / 50% 60% 30% 70%;
-  transform: rotate(-2deg);
+  border-radius: 40% 60% 65% 35% / 50% 55% 45% 50%;
   z-index: 1;
-  box-shadow: 0 10px 25px rgba(28, 43, 74, 0.15);
+  box-shadow: 0 15px 30px rgba(28, 43, 74, 0.12);
 }
 
-.hero-photo-main {
+/* Main B&W photo of Ashley holding camera */
+.hero-photo-main-stacked {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 75%;
-  height: 390px;
-  border-radius: 12px;
+  top: 70px;
+  left: 12%;
+  width: 48%;
+  height: 360px;
+  border-radius: 8px;
   overflow: hidden;
   z-index: 2;
-  box-shadow: 0 20px 40px var(--shadow-medium);
+  box-shadow: 0 20px 40px rgba(28, 43, 74, 0.22);
+  border: 4px solid var(--paper);
 }
 
-.hero-photo-main img {
+.hero-photo-main-stacked img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.5s ease;
 }
 
-.hero-photo-main:hover img {
-  transform: scale(1.05);
+.hero-photo-main-stacked:hover img {
+  transform: scale(1.03);
+}
+
+/* Custom Stacked Polaroids */
+.polaroid-stacked {
+  position: absolute;
+  background: var(--paper);
+  padding: 10px 10px 24px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(28, 43, 74, 0.18);
+  border: 1px solid var(--line);
+  z-index: 3;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
+}
+
+.polaroid-stacked:hover {
+  transform: translateY(-8px) scale(1.03) rotate(0deg) !important;
+  box-shadow: 0 25px 50px rgba(28, 43, 74, 0.28);
+  z-index: 10;
+}
+
+.p1-stacked {
+  top: 25px;
+  right: 14%;
+  width: 27%;
+  transform: rotate(5deg);
+}
+
+.p2-stacked {
+  top: 220px;
+  right: 18%;
+  width: 27%;
+  transform: rotate(-6deg);
+  z-index: 4;
+}
+
+.grayscale-img {
+  filter: grayscale(1);
+}
+
+/* Custom Scattered Stamps (Stacked Layout) */
+.scattered-stamp-stacked {
+  position: absolute;
+  width: 110px;
+  height: 138px;
+  filter: drop-shadow(0 8px 16px rgba(28, 43, 74, 0.12));
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.4s ease;
+  z-index: 5;
+  user-select: none;
+}
+
+.scattered-stamp-stacked:hover {
+  transform: scale(1.08) rotate(0deg) !important;
+  filter: drop-shadow(0 15px 30px rgba(28, 43, 74, 0.22));
+  z-index: 10;
+}
+
+.scattered-stamp-stacked svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Coordinates matching the user's reference mockup */
+.stamp-stacked-1 {
+  bottom: 60px;
+  left: 6%;
+  transform: rotate(-10deg);
+}
+
+.stamp-stacked-2 {
+  bottom: 120px;
+  left: 54%;
+  transform: rotate(8deg);
+}
+
+.stamp-stacked-3 {
+  top: 135px;
+  right: 8%;
+  transform: rotate(15deg);
+}
+
+.stamp-stacked-4 {
+  bottom: -15px;
+  right: 26%;
+  transform: rotate(-8deg);
+}
+
+.stamp-stacked-5 {
+  bottom: -5px;
+  right: 13%;
+  transform: rotate(12deg);
+  z-index: 6;
+}
+
+/* Copy below visual */
+.hero-copy-stacked {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 40px;
+  text-align: left;
+}
+
+.hero-copy-stacked h1 {
+  font-size: 3.2rem;
+  color: var(--navy);
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.hero-copy-stacked p {
+  font-size: 1.1rem;
+  color: var(--navy-soft);
+  max-width: 600px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-buttons-stacked {
+  display: flex;
+  gap: 16px;
 }
 
 /* Polaroid Styling */
@@ -1287,5 +1421,85 @@ footer {
   .footer-contact-block {
     flex-direction: column;
     gap: 16px;
+  }
+}
+
+/* Responsive adjustments for Stacked Hero layout */
+@media (max-width: 992px) {
+  .hero-visual-stacked {
+    height: 440px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  .paint-stroke-bg-stacked {
+    height: 320px;
+    width: 90%;
+  }
+  .hero-photo-main-stacked {
+    top: 50px;
+    height: 300px;
+    width: 52%;
+  }
+  .p1-stacked {
+    width: 32%;
+    top: 15px;
+  }
+  .p2-stacked {
+    width: 32%;
+    top: 200px;
+  }
+  .scattered-stamp-stacked {
+    width: 90px;
+    height: 113px;
+  }
+  .stamp-stacked-1 { bottom: 30px; }
+  .stamp-stacked-2 { bottom: 100px; }
+  .stamp-stacked-3 { top: 120px; }
+  .stamp-stacked-4 { bottom: -10px; }
+  .stamp-stacked-5 { bottom: -5px; }
+
+  .hero-copy-stacked {
+    padding: 0 20px;
+  }
+  .hero-copy-stacked h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-visual-stacked {
+    height: 350px;
+    max-width: 500px;
+  }
+  .paint-stroke-bg-stacked {
+    height: 250px;
+  }
+  .hero-photo-main-stacked {
+    top: 40px;
+    height: 230px;
+  }
+  .p1-stacked {
+    width: 36%;
+    top: 10px;
+  }
+  .p2-stacked {
+    width: 36%;
+    top: 150px;
+  }
+  .scattered-stamp-stacked {
+    width: 75px;
+    height: 94px;
+  }
+  .stamp-stacked-1 { bottom: 20px; left: 2%; }
+  .stamp-stacked-2 { bottom: 80px; left: 52%; }
+  .stamp-stacked-3 { top: 90px; right: 2%; }
+  .stamp-stacked-4 { bottom: -10px; right: 28%; }
+  .stamp-stacked-5 { bottom: -5px; right: 10%; }
+
+  .hero-copy-stacked h1 {
+    font-size: 2.2rem;
+  }
+  .hero-copy-stacked p {
+    font-size: 1rem;
   }
 }

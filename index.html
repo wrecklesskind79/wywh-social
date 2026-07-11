@@ -20,8 +20,9 @@
   <header id="site-header">
     <nav class="nav-container">
       <a href="#home" class="logo-block" id="logo-link">
-        <span class="logo">Wish You Were Here</span>
-        <span class="logo-sub">WYWH SOCIAL</span>
+        <span class="logo-top">Wish You Were Here</span>
+        <span class="logo-main">WYWH</span>
+        <span class="logo-sub">SOCIAL</span>
       </a>
       
       <!-- Mobile Menu Toggle Button -->
@@ -33,88 +34,153 @@
       
       <!-- Navigation Links -->
       <div class="nav-links" id="nav-menu">
-        <a href="#home" class="nav-link active" id="nav-home">Home</a>
-        <a href="#services" class="nav-link" id="nav-services">Services</a>
-        <a href="#work" class="nav-link" id="nav-work">Work</a>
         <a href="#about" class="nav-link" id="nav-about">About</a>
-        <a href="#contact" class="btn btn-coral nav-cta" id="nav-audit-btn">Book a Free Audit</a>
+        <a href="#services" class="nav-link" id="nav-services">Community</a>
+        <a href="#work" class="nav-link" id="nav-work">Explore</a>
+        <a href="#blog" class="nav-link" id="nav-blog">Blog</a>
+        <a href="#contact" class="nav-link" id="nav-join">Join</a>
+        <a href="#contact" class="btn btn-navy nav-cta" id="nav-collective-btn">Join the Collective</a>
       </div>
     </nav>
   </header>
 
   <main>
-    <!-- Hero Section -->
+    <!-- Hero Section (Stacked Layout) -->
     <section class="hero-section" id="home">
-      <div class="hero-container">
-        <div class="hero-copy">
-          <h1>Make them<br>wish they<br>were there.</h1>
-          <p>Stop scroll-fatigue. Fill your buses. Sell out your seasonal tours. Social media and storytelling for tourism & heritage brands by a seasoned guide who has actually run the tours.</p>
-          <div class="hero-buttons">
-            <a href="#contact" class="btn btn-coral" id="hero-audit-btn">Book a Free Social Audit</a>
-            <a href="#services" class="btn btn-outline" id="hero-services-btn">View Services</a>
-          </div>
-        </div>
+      <div class="hero-container-stacked">
         
-        <div class="hero-visual">
-          <!-- Postmark Overlay -->
-          <div class="postmark-stamp" id="hero-postmark"></div>
-          
+        <!-- Centered Visual Collage -->
+        <div class="hero-visual-stacked">
           <!-- Background paint stroke container -->
-          <div class="paint-stroke-bg"></div>
+          <div class="paint-stroke-bg-stacked"></div>
           
-          <!-- Scattered Stamp 1 (Sheldon Church Ruins) -->
-          <div class="scattered-stamp stamp-hero-1">
+          <!-- Main Hero Photo (Ashley B&W Street) -->
+          <div class="hero-photo-main-stacked">
+            <img src="images/ashley_street_bw.jpg" alt="Grayscale portrait of Ashley on a historic cobblestone street">
+          </div>
+          
+          <!-- Polaroid 1 (Color Neon Art) -->
+          <div class="polaroid-stacked p1-stacked">
+            <div class="polaroid-img-wrap">
+              <img src="images/ashley_hero.jpg" alt="Ashley smiling in front of Neon Museum signs">
+            </div>
+            <div class="polaroid-caption">MUSEUM OF NEON ART</div>
+          </div>
+          
+          <!-- Polaroid 2 (B&W Tour Bus) -->
+          <div class="polaroid-stacked p2-stacked">
+            <div class="polaroid-img-wrap">
+              <img src="images/ashley_tourbus.jpg" alt="Grayscale portrait of tour bus" class="grayscale-img">
+            </div>
+            <div class="polaroid-caption">TOUR BUS</div>
+          </div>
+
+          <!-- Scattered Stamps (mocking the reference image) -->
+          <!-- Stamp 1 (Eiffel Tower/Paris - Bottom Left) -->
+          <div class="scattered-stamp-stacked stamp-stacked-1">
             <svg viewBox="0 0 120 150">
               <defs>
-                <mask id="stamp-mask-hero">
+                <mask id="mask-stacked-1">
                   <rect width="120" height="150" fill="white" rx="4" />
-                  <!-- Top and Bottom Edge Perforations -->
                   <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
                   <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-                  <!-- Left and Right Edge Perforations -->
                   <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
                   <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
                 </mask>
               </defs>
-              <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-hero)" />
-              <image href="images/church_ruins_1.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-hero)" />
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#d8734c" text-anchor="middle" letter-spacing="1">WYWH SOCIAL</text>
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-1)" />
+              <image href="images/church_ruins_1.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-1)" />
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#a48c6f" text-anchor="middle" letter-spacing="1">PARIS 1925</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
-          
-          <!-- Main Hero Photo (Ashley) - Swapped to B&W street photo -->
-          <div class="hero-photo-main">
-            <img src="images/ashley_street_bw.jpg" alt="Grayscale portrait of Ashley on a historic cobblestone street">
+
+          <!-- Stamp 2 (Italian Coast - Center) -->
+          <div class="scattered-stamp-stacked stamp-stacked-2">
+            <svg viewBox="0 0 120 150">
+              <defs>
+                <mask id="mask-stacked-2">
+                  <rect width="120" height="150" fill="white" rx="4" />
+                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
+                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
+                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
+                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
+                </mask>
+              </defs>
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-2)" />
+              <image href="images/autumn_road.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-2)" />
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8a9860" text-anchor="middle" letter-spacing="1">ITALIAN COAST</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
           </div>
-          
-          <!-- Polaroid 1 (Color Neon Museum) - Swapped to Ashley Hero -->
-          <div class="polaroid p1">
-            <div class="polaroid-img-wrap">
-              <img src="images/ashley_hero.jpg" alt="Ashley in front of the GAMBLING neon sign at the Neon Museum">
-            </div>
-            <div class="polaroid-caption">Neon Museum</div>
+
+          <!-- Stamp 3 (Top Right Polaroid overlap) -->
+          <div class="scattered-stamp-stacked stamp-stacked-3">
+            <svg viewBox="0 0 120 150">
+              <defs>
+                <mask id="mask-stacked-3">
+                  <rect width="120" height="150" fill="white" rx="4" />
+                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
+                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
+                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
+                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
+                </mask>
+              </defs>
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-3)" />
+              <image href="images/washington_monument.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-3)" />
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8fadb8" text-anchor="middle" letter-spacing="1">USA POST</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
           </div>
-          
-          <!-- Polaroid 2 (Color Tour Bus) -->
-          <div class="polaroid p2">
-            <div class="polaroid-img-wrap">
-              <img src="images/ashley_tourbus.jpg" alt="Ashley smiling in front of the American Cruise Lines tour bus">
-            </div>
-            <div class="polaroid-caption">Tour bus</div>
+
+          <!-- Stamp 4 (Montana - Bottom Right 1) -->
+          <div class="scattered-stamp-stacked stamp-stacked-4">
+            <svg viewBox="0 0 120 150">
+              <defs>
+                <mask id="mask-stacked-4">
+                  <rect width="120" height="150" fill="white" rx="4" />
+                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
+                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
+                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
+                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
+                </mask>
+              </defs>
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-4)" />
+              <image href="images/elk_meadow.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-4)" />
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8a9860" text-anchor="middle" letter-spacing="1">MONTANA</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
           </div>
-          
-          <!-- Storytelling Badge -->
-          <div class="stamp-badge" id="storytelling-badge">
-            <div class="stamp-badge-inner">
-              <span>Storytelling</span>
-              <svg class="badge-plane-icon" viewBox="0 0 24 24" width="16" height="16">
-                <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z" fill="currentColor"/>
-              </svg>
-              <span>that travels</span>
-            </div>
+
+          <!-- Stamp 5 (New York - Bottom Right 2) -->
+          <div class="scattered-stamp-stacked stamp-stacked-5">
+            <svg viewBox="0 0 120 150">
+              <defs>
+                <mask id="mask-stacked-5">
+                  <rect width="120" height="150" fill="white" rx="4" />
+                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
+                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
+                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
+                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
+                </mask>
+              </defs>
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-5)" />
+              <image href="images/paramount_theater.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-5)" />
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#d8734c" text-anchor="middle" letter-spacing="1">NEW YORK</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
           </div>
         </div>
+
+        <!-- Stacked Copy below Visual -->
+        <div class="hero-copy-stacked">
+          <h1>Make them wish<br>they were there.</h1>
+          <p>Capture. Connect. Inspire. WYWH Social is the leading collective for storytelling, exploration, and global connection. Join the community and elevate your perspective.</p>
+          <div class="hero-buttons-stacked">
+            <a href="#contact" class="btn btn-navy" id="hero-apply-btn">Apply Now</a>
+          </div>
+        </div>
+        
       </div>
     </section>
 
