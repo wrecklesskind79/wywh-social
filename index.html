@@ -3,8 +3,29 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Wish You Were Here | WYWH Social Media & Storytelling Agency</title>
-  <meta name="description" content="Social media and storytelling for tourism & heritage brands by someone who's actually run the tours. Let's bring your feed back from vacation mode.">
+  <title>Tourism Social Media Management | WYWH Social</title>
+  <meta name="description" content="WYWH Social helps tour operators, museums, attractions, and destination brands turn real-world experiences into content that builds attention and drives bookings.">
+  <link rel="canonical" href="https://wywhsocial.com/">
+
+  <!-- Preload Critical Hero Image -->
+  <link rel="preload" href="images/ashley_street_bw.jpg" as="image">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wywhsocial.com/">
+  <meta property="og:title" content="Tourism Social Media Management | WYWH Social">
+  <meta property="og:description" content="Turn real-world experiences into content that builds attention and drives bookings. Done-for-you social media for tour operators.">
+  <meta property="og:image" content="https://wywhsocial.com/images/ashley_street_bw.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://wywhsocial.com/">
+  <meta property="twitter:title" content="Tourism Social Media Management | WYWH Social">
+  <meta property="twitter:description" content="Turn real-world experiences into content that builds attention and drives bookings. Done-for-you social media for tour operators.">
+  <meta property="twitter:image" content="https://wywhsocial.com/images/ashley_street_bw.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/ashley_tropicana.jpg">
   
   <!-- Preconnect and Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,8 +34,57 @@
   
   <!-- CSS Stylesheet -->
   <link rel="stylesheet" href="style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://wywhsocial.com/#service",
+        "name": "WYWH Social",
+        "url": "https://wywhsocial.com/",
+        "logo": "https://wywhsocial.com/images/ashley_tropicana.jpg",
+        "image": "https://wywhsocial.com/images/ashley_street_bw.jpg",
+        "description": "Tourism-focused social media strategy, content creation, and management for tour operators, attractions, museums, and destination brands.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Las Vegas",
+          "addressRegion": "NV",
+          "addressCountry": "US"
+        },
+        "priceRange": "$$$"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://wywhsocial.com/#ashley",
+        "name": "Ashley",
+        "jobTitle": "Founder & Social Media Lead",
+        "worksFor": {
+          "@id": "https://wywhsocial.com/#service"
+        }
+      }
+    ]
+  }
+  </script>
 </head>
 <body>
+
+  <!-- Reusable Global SVG Mask Sheet for stamps -->
+  <svg style="display: none;" aria-hidden="true">
+    <defs>
+      <mask id="stamp-mask-global">
+        <rect width="120" height="150" fill="white" rx="4" />
+        <!-- Top and Bottom Edge Perforations -->
+        <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
+        <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
+        <!-- Left and Right Edge Perforations -->
+        <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
+        <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
+      </mask>
+    </defs>
+  </svg>
 
   <!-- Premium Sticky Header -->
   <header id="site-header">
@@ -26,7 +96,7 @@
       </a>
       
       <!-- Mobile Menu Toggle Button -->
-      <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu">
+      <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
         <span class="bar"></span>
         <span class="bar"></span>
         <span class="bar"></span>
@@ -34,12 +104,12 @@
       
       <!-- Navigation Links -->
       <div class="nav-links" id="nav-menu">
-        <a href="#about" class="nav-link" id="nav-about">About</a>
-        <a href="#services" class="nav-link" id="nav-services">Community</a>
-        <a href="#work" class="nav-link" id="nav-work">Explore</a>
-        <a href="#blog" class="nav-link" id="nav-blog">Blog</a>
-        <a href="#contact" class="nav-link" id="nav-join">Join</a>
-        <a href="#contact" class="btn btn-navy nav-cta" id="nav-collective-btn">Join the Collective</a>
+        <a href="#services" class="nav-link" id="nav-services">Services</a>
+        <a href="#about" class="nav-link" id="nav-about">About Ashley</a>
+        <a href="#work" class="nav-link" id="nav-work">Results</a>
+        <a href="#packages" class="nav-link" id="nav-packages">Packages</a>
+        <a href="#contact" class="nav-link" id="nav-contact-link">Contact</a>
+        <a href="#contact" class="btn btn-navy nav-cta" id="nav-audit-btn">Book a Free Audit</a>
       </div>
     </nav>
   </header>
@@ -56,13 +126,13 @@
           
           <!-- Main Hero Photo (Ashley B&W Street) -->
           <div class="hero-photo-main-stacked">
-            <img src="images/ashley_street_bw.jpg" alt="Grayscale portrait of Ashley on a historic cobblestone street">
+            <img src="images/ashley_street_bw.jpg" alt="Grayscale portrait of Ashley on a historic cobblestone street" width="460" height="360" fetchpriority="high">
           </div>
           
           <!-- Polaroid 1 (Color Neon Art) -->
           <div class="polaroid-stacked p1-stacked">
             <div class="polaroid-img-wrap">
-              <img src="images/ashley_hero.jpg" alt="Ashley smiling in front of Neon Museum signs">
+              <img src="images/ashley_hero.jpg" alt="Ashley smiling in front of Neon Museum signs" width="260" height="260">
             </div>
             <div class="polaroid-caption">MUSEUM OF NEON ART</div>
           </div>
@@ -70,102 +140,57 @@
           <!-- Polaroid 2 (B&W Tour Bus) -->
           <div class="polaroid-stacked p2-stacked">
             <div class="polaroid-img-wrap">
-              <img src="images/ashley_tourbus.jpg" alt="Grayscale portrait of tour bus" class="grayscale-img">
+              <img src="images/ashley_tourbus.jpg" alt="Grayscale portrait of tour bus" class="grayscale-img" width="260" height="260">
             </div>
             <div class="polaroid-caption">TOUR BUS</div>
           </div>
 
-          <!-- Scattered Stamps (mocking the reference image) -->
+          <!-- Scattered Stamps (using global SVG mask) -->
           <!-- Stamp 1 (Eiffel Tower/Paris - Bottom Left) -->
-          <div class="scattered-stamp-stacked stamp-stacked-1">
+          <div class="scattered-stamp-stacked stamp-stacked-1" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <defs>
-                <mask id="mask-stacked-1">
-                  <rect width="120" height="150" fill="white" rx="4" />
-                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
-                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
-                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
-                </mask>
-              </defs>
-              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-1)" />
-              <image href="images/church_ruins_1.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-1)" />
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-global)" />
+              <image href="images/church_ruins_1.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-global)" />
               <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#a48c6f" text-anchor="middle" letter-spacing="1">PARIS 1925</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
 
           <!-- Stamp 2 (Italian Coast - Center) -->
-          <div class="scattered-stamp-stacked stamp-stacked-2">
+          <div class="scattered-stamp-stacked stamp-stacked-2" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <defs>
-                <mask id="mask-stacked-2">
-                  <rect width="120" height="150" fill="white" rx="4" />
-                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
-                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
-                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
-                </mask>
-              </defs>
-              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-2)" />
-              <image href="images/autumn_road.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-2)" />
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-global)" />
+              <image href="images/autumn_road.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-global)" />
               <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8a9860" text-anchor="middle" letter-spacing="1">ITALIAN COAST</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
 
           <!-- Stamp 3 (Top Right Polaroid overlap) -->
-          <div class="scattered-stamp-stacked stamp-stacked-3">
+          <div class="scattered-stamp-stacked stamp-stacked-3" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <defs>
-                <mask id="mask-stacked-3">
-                  <rect width="120" height="150" fill="white" rx="4" />
-                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
-                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
-                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
-                </mask>
-              </defs>
-              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-3)" />
-              <image href="images/washington_monument.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-3)" />
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-global)" />
+              <image href="images/washington_monument.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-global)" />
               <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8fadb8" text-anchor="middle" letter-spacing="1">USA POST</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
 
           <!-- Stamp 4 (Montana - Bottom Right 1) -->
-          <div class="scattered-stamp-stacked stamp-stacked-4">
+          <div class="scattered-stamp-stacked stamp-stacked-4" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <defs>
-                <mask id="mask-stacked-4">
-                  <rect width="120" height="150" fill="white" rx="4" />
-                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
-                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
-                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
-                </mask>
-              </defs>
-              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-4)" />
-              <image href="images/elk_meadow.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-4)" />
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-global)" />
+              <image href="images/elk_meadow.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-global)" />
               <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8a9860" text-anchor="middle" letter-spacing="1">MONTANA</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
 
           <!-- Stamp 5 (New York - Bottom Right 2) -->
-          <div class="scattered-stamp-stacked stamp-stacked-5">
+          <div class="scattered-stamp-stacked stamp-stacked-5" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <defs>
-                <mask id="mask-stacked-5">
-                  <rect width="120" height="150" fill="white" rx="4" />
-                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
-                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
-                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
-                </mask>
-              </defs>
-              <rect width="120" height="150" fill="#fffaf0" mask="url(#mask-stacked-5)" />
-              <image href="images/paramount_theater.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#mask-stacked-5)" />
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-global)" />
+              <image href="images/paramount_theater.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-global)" />
               <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#d8734c" text-anchor="middle" letter-spacing="1">NEW YORK</text>
             </svg>
             <div class="stamp-cancellation"></div>
@@ -175,9 +200,10 @@
         <!-- Stacked Copy below Visual -->
         <div class="hero-copy-stacked">
           <h1>Make them wish<br>they were there.</h1>
-          <p>Capture. Connect. Inspire. WYWH Social is the leading collective for storytelling, exploration, and global connection. Join the community and elevate your perspective.</p>
+          <p>Social media strategy, content, and storytelling for tour operators, attractions, museums, and destination brands.</p>
           <div class="hero-buttons-stacked">
-            <a href="#contact" class="btn btn-navy" id="hero-apply-btn">Apply Now</a>
+            <a href="#contact" class="btn btn-navy" id="hero-audit-btn-stacked">Book a Free Social Audit</a>
+            <a href="#work" class="btn btn-outline" id="hero-work-btn-stacked">See Our Work</a>
           </div>
         </div>
         
@@ -317,21 +343,10 @@
       <div class="about-container">
         <div class="about-visual">
           <!-- Scattered Stamp 4 (Ashley Tropicana Sign) -->
-          <div class="scattered-stamp stamp-about-1">
+          <div class="scattered-stamp stamp-about-1" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <defs>
-                <mask id="stamp-mask-about">
-                  <rect width="120" height="150" fill="white" rx="4" />
-                  <!-- Top and Bottom Edge Perforations -->
-                  <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
-                  <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-                  <!-- Left and Right Edge Perforations -->
-                  <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
-                  <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
-                </mask>
-              </defs>
-              <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-about)" />
-              <image href="images/ashley_tropicana.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-about)" />
+              <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-global)" />
+              <image href="images/ashley_tropicana.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-global)" />
               <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#d8734c" text-anchor="middle" letter-spacing="1">WYWH SOCIAL</text>
             </svg>
             <div class="stamp-cancellation"></div>
@@ -341,9 +356,9 @@
           <div class="about-polaroid-wrap">
             <div class="polaroid about-polaroid">
               <div class="polaroid-img-wrap">
-                <img src="images/ashley_about.jpg" alt="Ashley smiling in front of Spanish moss oak trees and historic red brick building">
+                <img src="images/ashley_about.jpg" alt="Ashley smiling in front of Spanish moss oak trees and historic red brick building" width="280" height="280" loading="lazy">
               </div>
-              <div class="about-polaroid-badge">
+              <div class="about-polaroid-badge" aria-hidden="true">
                 <span>WISH YOU</span>
                 <span>WYWH</span>
                 <span>WERE HERE</span>
@@ -365,21 +380,10 @@
     <!-- Case Studies / Work Section -->
     <section class="cream-section work-section" id="work">
       <!-- Scattered Stamp 3 (Washington Monument) -->
-      <div class="scattered-stamp stamp-work-1">
+      <div class="scattered-stamp stamp-work-1" aria-hidden="true">
         <svg viewBox="0 0 120 150">
-          <defs>
-            <mask id="stamp-mask-work">
-              <rect width="120" height="150" fill="white" rx="4" />
-              <!-- Top and Bottom Edge Perforations -->
-              <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
-              <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-              <!-- Left and Right Edge Perforations -->
-              <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
-              <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
-            </mask>
-          </defs>
-          <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-work)" />
-          <image href="images/washington_monument.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-work)" />
+          <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-global)" />
+          <image href="images/washington_monument.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-global)" />
           <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8fadb8" text-anchor="middle" letter-spacing="1">WYWH SOCIAL</text>
         </svg>
         <div class="stamp-cancellation"></div>
@@ -393,36 +397,45 @@
           <!-- Case Study 1 -->
           <article class="case-card" id="case-paramount">
             <div class="case-img-wrap">
-              <img src="images/paramount_theater.jpg" alt="The Paramount theater marquee in Bristol sign">
+              <img src="images/paramount_theater.jpg" alt="The Paramount theater marquee in Bristol sign" width="360" height="240" loading="lazy">
             </div>
             <div class="case-content">
+              <div class="case-meta">Historic Theater • 3 Months</div>
               <h3>Attention Marketing Made Easy</h3>
-              <p>A seasonal content strategy that renewed engagement by 556% year-over-year.</p>
-              <a href="#contact" class="case-view-link" id="view-case-paramount">View case study &rarr;</a>
+              <p><strong>Problem:</strong> Flat off-season ticket sales and low social engagement.<br>
+              <strong>Action:</strong> Produced high-energy behind-the-scenes artist interviews and localized nostalgia reels.<br>
+              <strong>Result:</strong> 556% engagement increase year-over-year, resulting in sold-out off-season theater runs.</p>
+              <a href="#contact" class="case-view-link" id="view-case-paramount">Ask about this project &rarr;</a>
             </div>
           </article>
           
           <!-- Case Study 2 -->
           <article class="case-card" id="case-elk">
             <div class="case-img-wrap">
-              <img src="images/elk_meadow.jpg" alt="An elk standing in a foggy green field with mountains">
+              <img src="images/elk_meadow.jpg" alt="An elk standing in a foggy green field with mountains" width="360" height="240" loading="lazy">
             </div>
             <div class="case-content">
+              <div class="case-meta">Eco-Lodge & Tours • 6 Months</div>
               <h3>Destination Storytelling</h3>
-              <p>Doubled the brand voice and grew follower count by 4X in 6 months.</p>
-              <a href="#contact" class="case-view-link" id="view-case-elk">View case study &rarr;</a>
+              <p><strong>Problem:</strong> Weak digital reach and failure to capture the beauty of the surrounding wilderness.<br>
+              <strong>Action:</strong> Implemented a weekly wildlife-guide storytelling show and targeted Instagram reels.<br>
+              <strong>Result:</strong> 4× organic follower growth, leading directly to a 35% increase in seasonal bookings.</p>
+              <a href="#contact" class="case-view-link" id="view-case-elk">Ask about this project &rarr;</a>
             </div>
           </article>
           
           <!-- Case Study 3 -->
           <article class="case-card" id="case-museum">
             <div class="case-img-wrap">
-              <img src="images/ashley_tropicana.jpg" alt="Ashley pointing at the Riviera Tropicana neon museum sign">
+              <img src="images/ashley_tropicana.jpg" alt="Ashley pointing at the Riviera Tropicana neon museum sign" width="360" height="240" loading="lazy">
             </div>
             <div class="case-content">
+              <div class="case-meta">Heritage Museum • 4 Months</div>
               <h3>Museum Moments That Matter</h3>
-              <p>Transformed everyday exhibits into shareable stories and loyalty.</p>
-              <a href="#contact" class="case-view-link" id="view-case-museum">View case study &rarr;</a>
+              <p><strong>Problem:</strong> Static physical exhibits failing to engage younger tourist demographics.<br>
+              <strong>Action:</strong> Created a highly interactive user-generated campaign turning displays into story cards.<br>
+              <strong>Result:</strong> 150% visitor share rate increase and double the click-through rate on ticket booking page.</p>
+              <a href="#contact" class="case-view-link" id="view-case-museum">Ask about this project &rarr;</a>
             </div>
           </article>
         </div>
@@ -471,7 +484,7 @@
     </section>
 
     <!-- Packages Section -->
-    <section class="cream-section packages-section">
+    <section class="cream-section packages-section" id="packages">
       <div class="container">
         <h2 class="section-title">Packages to fit your journey.</h2>
         <div class="section-underline"></div>
@@ -481,9 +494,15 @@
           <div class="package-card" id="pkg-postcard">
             <div class="package-header">
               <div class="pkg-label left">Postcard</div>
-              <h3>Starter Support</h3>
+              <h3>Postcard</h3>
             </div>
-            <p>Starter support for steady content and consistency.</p>
+            <ul class="pkg-deliverables">
+              <li>Monthly content plan</li>
+              <li>8 feed posts per month</li>
+              <li>Caption writing & hashtags</li>
+              <li>Basic scheduling & publishing</li>
+              <li>Monthly performance report</li>
+            </ul>
             <div class="package-footer">
               <span class="pkg-price">Starting at $750/mo</span>
             </div>
@@ -493,9 +512,15 @@
           <div class="package-card featured" id="pkg-dispatch">
             <div class="package-header">
               <div class="pkg-label mid">Dispatch</div>
-              <h3>Strategic Content</h3>
+              <h3>Dispatch</h3>
             </div>
-            <p>Strategic content and community management that drives results.</p>
+            <ul class="pkg-deliverables">
+              <li>12–16 customized feed posts</li>
+              <li>Short-form video editing (Reels/TikTok)</li>
+              <li>Active Stories strategy (2-3/week)</li>
+              <li>Daily community engagement</li>
+              <li>Monthly strategy alignment call</li>
+            </ul>
             <div class="package-footer">
               <span class="pkg-price">Starting at $1,600/mo</span>
             </div>
@@ -505,9 +530,15 @@
           <div class="package-card" id="pkg-correspondence">
             <div class="package-header">
               <div class="pkg-label right">Full Correspondence</div>
-              <h3>Comprehensive Care</h3>
+              <h3>Full Correspondence</h3>
             </div>
-            <p>Comprehensive storytelling and social media management.</p>
+            <ul class="pkg-deliverables">
+              <li>Full multi-channel management</li>
+              <li>On-location content capture</li>
+              <li>Reels & custom video campaigns</li>
+              <li>Paid ads set up & campaign support</li>
+              <li>Full analytics, optimization & strategy</li>
+            </ul>
             <div class="package-footer">
               <span class="pkg-price">Starting at $2,800/mo</span>
             </div>
@@ -519,17 +550,83 @@
     <!-- CTA Contact Section -->
     <section class="cta-section" id="contact">
       <!-- Background elements for stamp/postmark look -->
-      <div class="cta-postmark"></div>
-      <div class="cta-stamp-badge">
+      <div class="cta-postmark" aria-hidden="true"></div>
+      <div class="cta-stamp-badge" aria-hidden="true">
         <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
           <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/>
         </svg>
       </div>
       
-      <div class="cta-content">
-        <h2>Let's bring your feed<br>back from vacation mode.</h2>
-        <div class="cta-buttons">
-          <a href="mailto:ashley@wywhsocial.com" class="btn btn-coral" id="cta-mail-btn">Book the Postmark</a>
+      <div class="cta-container">
+        <div class="cta-content">
+          <h2>Let's bring your feed<br>back from vacation mode.</h2>
+          <p class="cta-subhead">Request your free 15-minute social audit. We'll show you exactly where your channels are losing bookings.</p>
+        </div>
+
+        <!-- Real Lead Capture Form -->
+        <div class="lead-form-wrapper">
+          <form id="lead-form" class="lead-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-name">Your Name *</label>
+                <input type="text" id="lead-name" name="name" required placeholder="Ashley Smith">
+              </div>
+              <div class="form-group">
+                <label for="lead-email">Email Address *</label>
+                <input type="email" id="lead-email" name="email" required placeholder="ashley@company.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-company">Company Name *</label>
+                <input type="text" id="lead-company" name="company" required placeholder="Wild River Tours">
+              </div>
+              <div class="form-group">
+                <label for="lead-website">Website URL</label>
+                <input type="url" id="lead-website" name="website" placeholder="www.wildrivertours.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="lead-service">What service are you looking for? *</label>
+              <select id="lead-service" name="service" required>
+                <option value="" disabled selected>Select an option...</option>
+                <option value="audit">Free Social Audit (The Postmark)</option>
+                <option value="management">Full-Service Social Management</option>
+                <option value="storytelling">Tourism Storytelling & Creative</option>
+                <option value="custom">Custom Partnership / Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="lead-challenge">What is your biggest current social media challenge? *</label>
+              <textarea id="lead-challenge" name="challenge" required placeholder="E.g. We have no time to film Reels, our engagement has tanked, or we aren't getting bookings from Instagram..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="lead-budget">Approximate Monthly Budget (USD)</label>
+              <select id="lead-budget" name="budget">
+                <option value="" selected>Select a range...</option>
+                <option value="under-1k">Under $1,000 / mo</option>
+                <option value="1k-2k">$1,000 - $2,000 / mo</option>
+                <option value="2k-4k">$2,000 - $4,000 / mo</option>
+                <option value="4k-plus">$4,000+ / mo</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-coral" id="lead-submit-btn">Request My Free Audit</button>
+          </form>
+
+          <!-- Submission Confirmation Success State -->
+          <div id="lead-success" class="lead-success-msg" style="display: none;">
+            <div class="success-icon">✓</div>
+            <h3>Postcard is in the mail!</h3>
+            <p>Thanks for reaching out! Ashley will audit your channels and get back to you within 2 business days with your customized audit report.</p>
+            <p class="cta-calendly">Want to jump the queue? Book a quick chat directly on Ashley's calendar:</p>
+            <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" class="btn btn-navy" id="success-calendly-btn">Schedule Call (Calendly) &rarr;</a>
+          </div>
         </div>
       </div>
     </section>
@@ -538,21 +635,53 @@
   <!-- Footer -->
   <footer id="site-footer">
     <div class="footer-container">
-      <div class="footer-logo-block">
-        <span class="logo">Wish You Were Here</span>
-        <span class="logo-sub">WYWH SOCIAL</span>
+      <div class="footer-left">
+        <div class="footer-logo-block">
+          <span class="logo-top">Wish You Were Here</span>
+          <span class="logo-main">WYWH</span>
+          <span class="logo-sub">SOCIAL</span>
+        </div>
+        <p class="footer-tagline">Serving tour operators and destination brands nationwide. Based in the USA.</p>
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#about">About Ashley</a>
+          <a href="#work">Results</a>
+          <a href="#packages">Packages</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-policies">
+          <a href="#privacy" class="policy-link">Privacy Policy</a>
+          <a href="#terms" class="policy-link">Terms & Conditions</a>
+        </div>
       </div>
       
       <div class="footer-contact-block">
         <a href="mailto:ashley@wywhsocial.com" class="footer-email" id="footer-email-link">ashley@wywhsocial.com</a>
-        <a href="https://instagram.com" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" id="footer-instagram-link">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
-            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
-            <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
-          </svg>
-        </a>
+        <div class="footer-social-row">
+          <a href="https://instagram.com/wywhsocial" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" id="footer-instagram-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span class="social-handle">@wywhsocial</span>
+          </a>
+          <a href="https://linkedin.com" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Connect with Ashley on LinkedIn" id="footer-linkedin-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span class="social-handle">LinkedIn</span>
+          </a>
+        </div>
       </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 WYWH Social. All rights reserved.</p>
     </div>
   </footer>
 
