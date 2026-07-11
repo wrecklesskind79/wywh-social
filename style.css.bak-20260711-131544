@@ -1,0 +1,1831 @@
+/* -------------------------------------------------------------
+   Wish You Were Here (WYWH Social) - Custom Premium Stylesheet
+   ------------------------------------------------------------- */
+
+/* Reset & Base Styles */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  /* Color Palette */
+  --cream: #e7d3ad;
+  --cream-light: #f0e0c1;
+  --navy: #1c2b4a;
+  --navy-soft: #384c75;
+  --coral: #d8734c;
+  --coral-dark: #c05c33;
+  --olive: #8a9860;
+  --sky: #8fadb8;
+  --paper: #f8edd5;
+  --line: #d4bb91;
+  --white: #ffffff;
+  
+  /* Shadows */
+  --shadow-soft: rgba(28, 43, 74, 0.08);
+  --shadow-medium: rgba(28, 43, 74, 0.15);
+  --shadow-hard: rgba(28, 43, 74, 0.25);
+  
+  /* Layout */
+  --header-height: 80px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--cream);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(174, 101, 48, 0.12), transparent 26%),
+    radial-gradient(circle at 88% 34%, rgba(128, 89, 43, 0.09), transparent 30%),
+    linear-gradient(90deg, rgba(91, 52, 24, 0.10), transparent 8%, transparent 92%, rgba(91, 52, 24, 0.11)),
+    repeating-radial-gradient(circle at 30% 20%, rgba(78, 58, 34, 0.025) 0 0.7px, transparent 0.8px 4px);
+  color: var(--navy);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* A restrained postcard patina: warm paper edges without muddying the content. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  box-shadow:
+    inset 0 0 115px rgba(82, 45, 19, 0.20),
+    inset 0 0 32px rgba(105, 62, 27, 0.12),
+    inset 0 0 7px rgba(74, 39, 17, 0.16);
+  mix-blend-mode: multiply;
+}
+
+/* Typography */
+h1, h2, h3, .logo {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.25s ease;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/* Utility Elements */
+.section-title {
+  font-size: 2.2rem;
+  text-align: center;
+  font-weight: 700;
+  color: var(--navy);
+  line-height: 1.3;
+}
+
+.section-underline {
+  width: 70px;
+  height: 3px;
+  background-color: var(--coral);
+  margin: 16px auto 48px;
+  border-radius: 2px;
+}
+
+.eyebrow {
+  color: var(--coral);
+  font-size: 0.85rem;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+
+/* Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  border: 2px solid transparent;
+}
+
+.btn-coral {
+  background-color: var(--coral);
+  color: var(--white);
+  box-shadow: 0 4px 10px rgba(216, 115, 76, 0.3);
+}
+
+.btn-coral:hover {
+  background-color: var(--coral-dark);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(216, 115, 76, 0.4);
+}
+
+.btn-navy {
+  background-color: var(--navy);
+  color: var(--white);
+  box-shadow: 0 4px 10px rgba(28, 43, 74, 0.25);
+  border-radius: 4px;
+  padding: 12px 24px;
+}
+
+.btn-navy:hover {
+  background-color: var(--navy-soft);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(28, 43, 74, 0.35);
+}
+
+.btn-outline {
+  background-color: transparent;
+  border-color: var(--navy);
+  color: var(--navy);
+}
+
+.btn-outline:hover {
+  background-color: var(--navy);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 15px rgba(28, 43, 74, 0.15);
+}
+
+/* -------------------------------------------------------------
+   Header & Navigation
+   ------------------------------------------------------------- */
+header {
+  background-color: rgba(240, 224, 193, 0.90);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-bottom: 1px solid var(--line);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: var(--header-height);
+  display: flex;
+  align-items: center;
+}
+
+.nav-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.logo-block .logo-top {
+  font-size: 0.55rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--navy-soft);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.logo-block .logo-main {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 1px;
+}
+
+.logo-block .logo-sub {
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  color: var(--navy-soft);
+  font-weight: 700;
+  margin-top: 1px;
+  line-height: 1;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 36px;
+}
+
+.nav-links .nav-link {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: var(--navy-soft);
+  position: relative;
+  padding: 4px 0;
+}
+
+.nav-links .nav-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: var(--coral);
+  transition: width 0.25s ease;
+}
+
+.nav-links .nav-link:hover,
+.nav-links .nav-link.active {
+  color: var(--coral);
+}
+
+.nav-links .nav-link:hover::after,
+.nav-links .nav-link.active::after {
+  width: 100%;
+}
+
+.nav-cta {
+  margin-left: 12px;
+  padding: 10px 20px;
+  font-size: 0.85rem;
+}
+
+/* Mobile Menu Toggle button */
+.mobile-menu-toggle {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 26px;
+  height: 18px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 1100;
+}
+
+.mobile-menu-toggle .bar {
+  width: 100%;
+  height: 2px;
+  background-color: var(--navy);
+  transition: all 0.3s ease;
+  border-radius: 2px;
+}
+
+/* -------------------------------------------------------------
+   Hero Section
+   ------------------------------------------------------------- */
+.hero-section {
+  padding: 60px 0 100px;
+  position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%231c2b4a" stroke-width="1.2" opacity="0.045"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
+  background-repeat: repeat;
+  background-size: 520px 520px;
+  background-position: 24px 18px;
+  box-shadow: inset 0 18px 34px rgba(122, 83, 43, 0.035);
+}
+
+.hero-container-stacked {
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Center Visual Collage Area */
+.hero-visual-stacked {
+  position: relative;
+  width: 100%;
+  max-width: 960px;
+  height: 520px;
+  margin-bottom: 40px;
+}
+
+/* Paint stroke backing */
+.paint-stroke-bg-stacked {
+  position: absolute;
+  top: 40px;
+  left: 50%;
+  transform: translateX(-50%) rotate(-1.5deg);
+  width: 82%;
+  height: 380px;
+  background: linear-gradient(135deg, var(--navy-soft) 0%, var(--navy) 100%);
+  border-radius: 40% 60% 65% 35% / 50% 55% 45% 50%;
+  z-index: 1;
+  box-shadow: 0 15px 30px rgba(28, 43, 74, 0.12);
+}
+
+/* Main B&W photo of Ashley holding camera */
+.hero-photo-main-stacked {
+  position: absolute;
+  top: 70px;
+  left: 12%;
+  width: 48%;
+  height: 360px;
+  border-radius: 8px;
+  overflow: hidden;
+  z-index: 2;
+  box-shadow: 0 20px 40px rgba(28, 43, 74, 0.22);
+  border: 4px solid var(--paper);
+}
+
+.hero-photo-main-stacked img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.hero-photo-main-stacked:hover img {
+  transform: scale(1.03);
+}
+
+/* Custom Stacked Polaroids */
+.polaroid-stacked {
+  position: absolute;
+  background: var(--paper);
+  padding: 10px 10px 24px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px rgba(28, 43, 74, 0.18);
+  border: 1px solid var(--line);
+  z-index: 3;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease;
+}
+
+.polaroid-stacked:hover {
+  transform: translateY(-8px) scale(1.03) rotate(0deg) !important;
+  box-shadow: 0 25px 50px rgba(28, 43, 74, 0.28);
+  z-index: 10;
+}
+
+.p1-stacked {
+  top: 25px;
+  right: 14%;
+  width: 27%;
+  transform: rotate(5deg);
+}
+
+.p2-stacked {
+  top: 220px;
+  right: 18%;
+  width: 27%;
+  transform: rotate(-6deg);
+  z-index: 4;
+}
+
+.grayscale-img {
+  filter: grayscale(1);
+}
+
+/* Custom Scattered Stamps (Stacked Layout) */
+.scattered-stamp-stacked {
+  position: absolute;
+  width: 110px;
+  height: 138px;
+  filter: drop-shadow(0 8px 16px rgba(28, 43, 74, 0.12));
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.4s ease;
+  z-index: 5;
+  user-select: none;
+}
+
+.scattered-stamp-stacked:hover {
+  transform: scale(1.08) rotate(0deg) !important;
+  filter: drop-shadow(0 15px 30px rgba(28, 43, 74, 0.22));
+  z-index: 10;
+}
+
+.scattered-stamp-stacked svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Coordinates matching the user's reference mockup */
+.stamp-stacked-1 {
+  bottom: 60px;
+  left: 6%;
+  transform: rotate(-10deg);
+}
+
+.stamp-stacked-2 {
+  bottom: 120px;
+  left: 54%;
+  transform: rotate(8deg);
+}
+
+.stamp-stacked-3 {
+  top: 135px;
+  right: 8%;
+  transform: rotate(15deg);
+}
+
+.stamp-stacked-4 {
+  bottom: -15px;
+  right: 26%;
+  transform: rotate(-8deg);
+}
+
+.stamp-stacked-5 {
+  bottom: -5px;
+  right: 13%;
+  transform: rotate(12deg);
+  z-index: 6;
+}
+
+/* Copy below visual */
+.hero-copy-stacked {
+  width: 100%;
+  max-width: 900px;
+  padding: 0 40px;
+  text-align: left;
+}
+
+.hero-copy-stacked h1 {
+  font-size: 3.2rem;
+  color: var(--navy);
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.hero-copy-stacked p {
+  font-size: 1.1rem;
+  color: var(--navy-soft);
+  max-width: 600px;
+  margin-bottom: 30px;
+  line-height: 1.6;
+}
+
+.hero-buttons-stacked {
+  display: flex;
+  gap: 16px;
+}
+
+/* Polaroid Styling */
+.polaroid {
+  background: var(--paper);
+  padding: 10px 10px 28px;
+  border-radius: 4px;
+  box-shadow: 0 15px 35px var(--shadow-medium);
+  border: 1px solid var(--line);
+  transition: transform 0.3s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.3s ease;
+  z-index: 3;
+}
+
+.polaroid-img-wrap {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  overflow: hidden;
+  border-radius: 2px;
+  border: 1px solid rgba(0,0,0,0.03);
+}
+
+.polaroid-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.polaroid-caption {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--navy-soft);
+  text-align: center;
+  margin-top: 12px;
+}
+
+.polaroid.p1 {
+  position: absolute;
+  top: 5%;
+  right: -10px;
+  width: 180px;
+  transform: rotate(6deg);
+}
+
+.polaroid.p1 img {
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+
+.polaroid.p1:hover img {
+  filter: grayscale(0%);
+}
+
+.polaroid.p2 {
+  position: absolute;
+  bottom: 5%;
+  right: 6%;
+  width: 195px;
+  transform: rotate(-4deg);
+}
+
+.polaroid:hover {
+  transform: translateY(-8px) scale(1.03) rotate(0deg);
+  box-shadow: 0 25px 50px var(--shadow-hard);
+  z-index: 10;
+}
+
+/* Stamps and badge embellishments */
+.postmark-stamp {
+  position: absolute;
+  top: -24px;
+  left: 20%;
+  width: 80px;
+  height: 80px;
+  border: 2px dashed rgba(56, 76, 117, 0.35);
+  border-radius: 50%;
+  z-index: 3;
+  transform: rotate(-15deg);
+  pointer-events: none;
+}
+
+.postmark-stamp::after {
+  content: 'POSTAGE';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 0.55rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: rgba(56, 76, 117, 0.35);
+}
+
+.stamp-badge {
+  position: absolute;
+  bottom: -20px;
+  left: -20px;
+  background-color: var(--paper);
+  border: 2.5px dashed var(--coral);
+  color: var(--coral);
+  width: 116px;
+  height: 116px;
+  border-radius: 50%;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 25px var(--shadow-soft);
+  transform: rotate(-10deg);
+}
+
+.stamp-badge-inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-size: 0.6rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.badge-plane-icon {
+  margin: 6px 0;
+  transform: rotate(-45deg);
+}
+
+/* Custom Scattered Postage Stamps */
+.scattered-stamp {
+  position: absolute;
+  width: 130px;
+  height: 162px;
+  filter: drop-shadow(0 10px 20px rgba(28, 43, 74, 0.12));
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), filter 0.4s ease;
+  z-index: 5;
+  user-select: none;
+}
+
+.scattered-stamp:hover {
+  transform: scale(1.08) rotate(0deg) !important;
+  filter: drop-shadow(0 15px 30px rgba(28, 43, 74, 0.22));
+  z-index: 10;
+}
+
+.scattered-stamp svg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* Specific Positions for scattered stamps */
+/* Stamp 1: Hero visual area, floating top right */
+.stamp-hero-1 {
+  top: -30px;
+  right: 5%;
+  transform: rotate(12deg);
+}
+
+/* Stamp 2: Services section, left background */
+.stamp-services-1 {
+  top: 10%;
+  left: 2%;
+  transform: rotate(-15deg);
+}
+
+/* Stamp 3: Work Section, right background */
+.stamp-work-1 {
+  top: 25%;
+  right: 2%;
+  transform: rotate(8deg);
+}
+
+/* Stamp 4: About Section, overlapping the About Polaroid */
+.stamp-about-1 {
+  bottom: -40px;
+  right: -30px;
+  transform: rotate(-12deg);
+}
+
+.services-section {
+  position: relative;
+}
+
+.work-section {
+  position: relative;
+}
+
+.about-visual {
+  position: relative;
+}
+
+/* Perforation cancel/postmark overlay lines for stamps */
+.stamp-cancellation {
+  position: absolute;
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  opacity: 0.12;
+  background-image: repeating-linear-gradient(
+    -45deg,
+    transparent,
+    transparent 10px,
+    var(--navy) 10px,
+    var(--navy) 11px
+  );
+  mix-blend-mode: multiply;
+  mask-image: radial-gradient(circle at center, black 65%, transparent 95%);
+  -webkit-mask-image: radial-gradient(circle at center, black 65%, transparent 95%);
+}
+
+/* -------------------------------------------------------------
+   Pain Points Section (Guests/Social Media)
+   ------------------------------------------------------------- */
+.light-section {
+  background-color: var(--cream-light);
+  padding: 100px 0;
+}
+
+.cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+.card {
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  padding: 40px 32px;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px var(--shadow-medium);
+  border-color: var(--coral);
+}
+
+.icon-circle {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 24px;
+  color: var(--white);
+}
+
+.ic-sky { background-color: var(--sky); }
+.ic-olive { background-color: var(--olive); }
+.ic-coral { background-color: var(--coral); }
+
+.card h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  margin-bottom: 12px;
+  color: var(--navy);
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: var(--navy-soft);
+}
+
+/* -------------------------------------------------------------
+   Services Section (How We Help)
+   ------------------------------------------------------------- */
+.cream-section {
+  background-color: var(--cream);
+  padding: 100px 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%231c2b4a" stroke-width="1.2" opacity="0.045"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
+  background-repeat: repeat;
+  background-size: 560px 560px;
+  background-position: -110px 60px;
+}
+
+.service-card {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card .learn-more-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 24px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--coral);
+}
+
+.service-card .learn-more-link:hover {
+  color: var(--coral-dark);
+}
+
+/* -------------------------------------------------------------
+   About Section (Ashley)
+   ------------------------------------------------------------- */
+.about-section {
+  background-color: #ddc9a4; /* Warm aged-postcard paper */
+  padding: 100px 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%231c2b4a" stroke-width="1.2" opacity="0.045"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
+  background-repeat: repeat;
+  background-size: 610px 610px;
+  background-position: 170px -80px;
+}
+
+.about-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 0.95fr 1.05fr;
+  gap: 80px;
+  align-items: center;
+}
+
+.about-visual {
+  display: flex;
+  justify-content: center;
+}
+
+.about-polaroid-wrap {
+  position: relative;
+  width: 320px;
+}
+
+.about-polaroid {
+  width: 100%;
+  padding-bottom: 32px;
+  transform: rotate(-3deg);
+  box-shadow: 0 20px 45px rgba(28, 43, 74, 0.18);
+}
+
+.about-polaroid .polaroid-img-wrap {
+  aspect-ratio: 1 / 1;
+}
+
+.about-polaroid-badge {
+  position: absolute;
+  bottom: -15px;
+  right: -25px;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: var(--paper);
+  border: 2px dashed var(--navy-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(8deg);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.06);
+}
+
+.about-polaroid-badge span {
+  font-size: 0.55rem;
+  font-weight: 700;
+  color: var(--navy-soft);
+  letter-spacing: 1px;
+  line-height: 1.4;
+}
+
+.about-polaroid-badge span:nth-child(2) {
+  color: var(--coral);
+  font-size: 0.7rem;
+}
+
+.about-content h2 {
+  font-size: 2.5rem;
+  color: var(--navy);
+  margin-bottom: 24px;
+}
+
+.about-content p {
+  font-size: 1.05rem;
+  color: var(--navy-soft);
+  margin-bottom: 20px;
+  max-width: 580px;
+}
+
+.about-content .signature-text {
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-size: 1.35rem;
+  color: var(--navy);
+  margin-top: 36px;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+  display: inline-block;
+}
+
+/* -------------------------------------------------------------
+   Case Studies / Work Section
+   ------------------------------------------------------------- */
+.cases-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 32px;
+}
+
+.case-card {
+  background-color: var(--paper);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  display: flex;
+  flex-direction: column;
+}
+
+.case-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px var(--shadow-medium);
+  border-color: var(--coral);
+}
+
+.case-img-wrap {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  border-bottom: 1px solid var(--line);
+}
+
+.case-img-wrap img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+
+.case-card:hover .case-img-wrap img {
+  transform: scale(1.06);
+}
+
+.case-content {
+  padding: 30px 24px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.case-content h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: var(--navy);
+}
+
+.case-content p {
+  font-size: 0.95rem;
+  color: var(--navy-soft);
+  margin-bottom: 24px;
+}
+
+.case-view-link {
+  display: inline-flex;
+  align-items: center;
+  margin-top: auto;
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: var(--coral);
+}
+
+.case-view-link:hover {
+  color: var(--coral-dark);
+}
+
+/* -------------------------------------------------------------
+   Process Section
+   ------------------------------------------------------------- */
+.process-section {
+  position: relative;
+}
+
+.process-steps-wrap {
+  position: relative;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+/* Horizontal dotted connector line */
+.process-steps-line {
+  position: absolute;
+  top: 42px;
+  left: 5%;
+  width: 90%;
+  height: 2px;
+  border-top: 2.5px dashed var(--line);
+  z-index: 1;
+}
+
+.process-steps {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+  z-index: 2;
+}
+
+.step-card {
+  width: 22%;
+  text-align: center;
+  background-color: transparent;
+}
+
+.step-num {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  color: var(--white);
+  font-weight: 700;
+  font-size: 1.05rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+  box-shadow: 0 4px 10px var(--shadow-soft);
+}
+
+#step-discover .step-num { background-color: var(--sky); }
+#step-plan .step-num { background-color: var(--olive); }
+#step-create .step-num { background-color: var(--coral); }
+#step-deliver .step-num { background-color: var(--navy-soft); }
+
+.step-card h3 {
+  font-size: 1.15rem;
+  font-weight: 600;
+  margin-bottom: 8px;
+  color: var(--navy);
+}
+
+.step-card p {
+  font-size: 0.88rem;
+  color: var(--navy-soft);
+  padding: 0 4px;
+}
+
+/* -------------------------------------------------------------
+   Packages Section
+   ------------------------------------------------------------- */
+.packages-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  max-width: 1050px;
+  margin: 0 auto;
+}
+
+.package-card {
+  background-color: var(--paper);
+  border: 1.5px solid var(--line);
+  border-radius: 14px;
+  padding: 40px 32px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+}
+
+/* Subtle postmark outline stamp on packages */
+.package-card::before {
+  content: '';
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 44px;
+  height: 44px;
+  border: 1.5px dashed var(--line);
+  border-radius: 50%;
+  opacity: 0.6;
+}
+
+.package-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 20px 40px rgba(28, 43, 74, 0.12);
+  border-color: var(--coral);
+}
+
+.package-card.featured {
+  border: 2.5px solid var(--olive);
+  transform: scale(1.03);
+  box-shadow: 0 10px 25px var(--shadow-soft);
+}
+
+.package-card.featured:hover {
+  transform: scale(1.04) translateY(-6px);
+  border-color: var(--olive);
+  box-shadow: 0 20px 40px rgba(28, 43, 74, 0.18);
+}
+
+#pkg-postcard .package-card::before { border-color: var(--sky); }
+#pkg-dispatch .package-card::before { border-color: var(--olive); }
+#pkg-correspondence .package-card::before { border-color: var(--coral); }
+
+.package-header {
+  margin-bottom: 20px;
+}
+
+.pkg-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+
+.pkg-label.left { color: var(--sky); }
+.pkg-label.mid { color: var(--olive); }
+.pkg-label.right { color: var(--coral); }
+
+.package-header h3 {
+  font-size: 1.4rem;
+  color: var(--navy);
+}
+
+.package-card p {
+  font-size: 0.95rem;
+  color: var(--navy-soft);
+  margin-bottom: 30px;
+}
+
+.package-footer {
+  margin-top: auto;
+  border-top: 1px solid var(--line);
+  padding-top: 20px;
+}
+
+.pkg-price {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--navy);
+}
+
+/* Concrete Packages Deliverables List */
+.pkg-deliverables {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  text-align: left;
+}
+
+.pkg-deliverables li {
+  font-size: 0.95rem;
+  color: var(--navy-soft);
+  position: relative;
+  padding-left: 24px;
+  line-height: 1.4;
+}
+
+.pkg-deliverables li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+#pkg-postcard .pkg-deliverables li::before {
+  color: var(--coral);
+}
+
+#pkg-dispatch .pkg-deliverables li::before {
+  color: var(--olive);
+}
+
+#pkg-correspondence .pkg-deliverables li::before {
+  color: var(--sky);
+}
+
+/* -------------------------------------------------------------
+   CTA / Contact Section with Lead Form
+   ------------------------------------------------------------- */
+.cta-section {
+  background-color: var(--navy);
+  color: var(--white);
+  padding: 100px 24px;
+  position: relative;
+  overflow: hidden;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%23ffffff" stroke-width="1.2" opacity="0.025"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
+  background-repeat: repeat;
+}
+
+.cta-postmark {
+  position: absolute;
+  top: 8%;
+  left: 5%;
+  width: 90px;
+  height: 90px;
+  border: 2px dashed rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  transform: rotate(-10deg);
+}
+
+.cta-stamp-badge {
+  position: absolute;
+  bottom: 8%;
+  left: 3%;
+  width: 90px;
+  height: 90px;
+  border: 2.5px dashed rgba(255, 255, 255, 0.15);
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.15);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotate(20deg);
+}
+
+.cta-stamp-badge svg {
+  transform: rotate(-45deg);
+}
+
+.cta-container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  gap: 60px;
+  align-items: start;
+  text-align: left;
+  position: relative;
+  z-index: 5;
+}
+
+.cta-content h2 {
+  font-size: 3rem;
+  font-weight: 600;
+  line-height: 1.15;
+  margin-bottom: 20px;
+  font-family: 'Playfair Display', serif;
+}
+
+.cta-subhead {
+  font-size: 1.15rem;
+  opacity: 0.85;
+  line-height: 1.6;
+  max-width: 440px;
+}
+
+/* Lead form styling */
+.lead-form-wrapper {
+  background: var(--paper);
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.25);
+  color: var(--navy);
+  border: 1px solid var(--line);
+}
+
+.lead-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--navy-soft);
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+  padding: 12px 16px;
+  border-radius: 4px;
+  border: 1.5px solid var(--line);
+  background-color: var(--white);
+  color: var(--navy);
+  font-family: inherit;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border-color 0.25s ease, box-shadow 0.25s ease;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+  border-color: var(--coral);
+  box-shadow: 0 0 0 3px rgba(216, 115, 76, 0.15);
+}
+
+.form-group textarea {
+  resize: vertical;
+  min-height: 110px;
+}
+
+/* Success State */
+.lead-success-msg {
+  text-align: center;
+  padding: 20px 0;
+}
+
+.success-icon {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--olive);
+  color: var(--white);
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 20px;
+}
+
+.lead-success-msg h3 {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+  margin-bottom: 16px;
+}
+
+.lead-success-msg p {
+  color: var(--navy-soft);
+  font-size: 1.05rem;
+  margin-bottom: 20px;
+  line-height: 1.6;
+}
+
+.cta-calendly {
+  font-weight: 600;
+  margin-top: 30px !important;
+}
+
+#success-calendly-btn {
+  margin-top: 10px;
+}
+
+/* Keyboard Focus Outline */
+a:focus,
+button:focus,
+input:focus,
+select:focus,
+textarea:focus {
+  outline: 2.5px solid var(--coral);
+  outline-offset: 4px;
+}
+
+/* Prefers Reduced Motion settings */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-delay: -1ms !important;
+    animation-duration: 1ms !important;
+    animation-iteration-count: 1 !important;
+    background-attachment: initial !important;
+    scroll-behavior: auto !important;
+    transition-duration: 0s !important;
+    transition-delay: 0s !important;
+  }
+}
+
+/* -------------------------------------------------------------
+   Footer Section
+   ------------------------------------------------------------- */
+footer {
+  background-color: var(--cream-light);
+  border-top: 1px solid var(--line);
+  padding: 60px 0 20px;
+}
+
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr;
+  gap: 40px;
+  align-items: start;
+}
+
+.footer-left {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.footer-left .logo-top {
+  font-size: 0.55rem;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  color: var(--navy-soft);
+  font-weight: 600;
+  line-height: 1;
+}
+
+.footer-left .logo-main {
+  font-size: 1.8rem;
+  font-family: 'Playfair Display', serif;
+  color: var(--navy);
+  font-weight: 700;
+  line-height: 0.95;
+  letter-spacing: 1px;
+}
+
+.footer-left .logo-sub {
+  font-size: 0.65rem;
+  letter-spacing: 4px;
+  color: var(--navy-soft);
+  font-weight: 700;
+  margin-top: 1px;
+  line-height: 1;
+}
+
+.footer-tagline {
+  font-size: 0.9rem;
+  color: var(--navy-soft);
+  line-height: 1.5;
+  max-width: 280px;
+}
+
+.footer-middle {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-links a {
+  font-size: 0.95rem;
+  color: var(--navy-soft);
+  font-weight: 500;
+  transition: color 0.2s ease;
+  align-self: start;
+}
+
+.footer-links a:hover {
+  color: var(--coral);
+}
+
+.footer-policies {
+  display: flex;
+  gap: 16px;
+}
+
+.policy-link {
+  font-size: 0.8rem;
+  color: var(--navy-soft);
+  opacity: 0.7;
+  transition: opacity 0.2s ease;
+}
+
+.policy-link:hover {
+  opacity: 1;
+}
+
+.footer-contact-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.footer-email {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--navy);
+  transition: color 0.2s ease;
+}
+
+.footer-email:hover {
+  color: var(--coral);
+}
+
+.footer-social-row {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.footer-social-icon {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 0.9rem;
+  color: var(--navy-soft);
+  transition: color 0.2s ease;
+}
+
+.footer-social-icon svg {
+  color: var(--coral);
+  transition: transform 0.2s ease;
+}
+
+.footer-social-icon:hover {
+  color: var(--coral);
+}
+
+.footer-social-icon:hover svg {
+  transform: translateY(-2px);
+}
+
+.footer-bottom {
+  max-width: 1200px;
+  margin: 40px auto 0;
+  padding: 20px 24px 0;
+  border-top: 1px solid var(--line);
+  text-align: center;
+}
+
+.footer-bottom p {
+  font-size: 0.8rem;
+  color: var(--navy-soft);
+  opacity: 0.6;
+}
+
+/* -------------------------------------------------------------
+   Responsive Media Queries
+   ------------------------------------------------------------- */
+
+/* Tablet Screens */
+@media (max-width: 992px) {
+  .hero-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+  
+  .hero-copy p {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  
+  .hero-buttons {
+    justify-content: center;
+  }
+  
+  .hero-visual {
+    height: 420px;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+  
+  .hero-photo-main {
+    width: 76%;
+    height: 350px;
+  }
+  
+  .paint-stroke-bg {
+    width: 78%;
+    height: 340px;
+  }
+  
+  .polaroid.p1 {
+    width: 155px;
+  }
+  
+  .polaroid.p2 {
+    width: 170px;
+  }
+  
+  .cards-grid,
+  .cases-grid,
+  .packages-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 24px;
+  }
+  
+  .packages-grid {
+    max-width: 700px;
+  }
+  
+  .package-card.featured {
+    transform: scale(1);
+  }
+  
+  .about-container {
+    grid-template-columns: 1fr;
+    gap: 48px;
+    text-align: center;
+  }
+  
+  .about-content .signature-text {
+    margin-top: 24px;
+  }
+  
+  .process-steps-line {
+    display: none;
+  }
+  
+  .process-steps {
+    flex-direction: column;
+    gap: 24px;
+    align-items: flex-start;
+    max-width: 480px;
+    margin: 0 auto;
+  }
+  
+  .step-card {
+    width: 100%;
+    text-align: left;
+    display: flex;
+    gap: 20px;
+    align-items: center;
+  }
+  
+  .step-num {
+    margin: 0;
+    flex-shrink: 0;
+  }
+}
+
+/* Mobile Screens */
+@media (max-width: 768px) {
+  :root {
+    --header-height: 70px;
+  }
+  
+  .hero-copy h1 {
+    font-size: 2.8rem;
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+  }
+  
+  /* Mobile header links hide, toggle appears */
+  .mobile-menu-toggle {
+    display: flex;
+  }
+  
+  .nav-links {
+    position: fixed;
+    top: var(--header-height);
+    left: 100%;
+    width: 100%;
+    height: calc(100vh - var(--header-height));
+    background-color: var(--cream-light);
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    transition: left 0.3s ease;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+    padding-bottom: 80px;
+  }
+  
+  .nav-links.open {
+    left: 0;
+  }
+  
+  .nav-cta {
+    margin-left: 0;
+    width: 200px;
+  }
+  
+  /* Hamburger Open State */
+  .mobile-menu-toggle.open .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .mobile-menu-toggle.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .mobile-menu-toggle.open .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+  
+  .cards-grid,
+  .cases-grid,
+  .packages-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .hero-visual {
+    height: 380px;
+  }
+  
+  .hero-photo-main {
+    height: 310px;
+  }
+  
+  .paint-stroke-bg {
+    height: 300px;
+  }
+  
+  .polaroid.p1 {
+    width: 135px;
+    right: -5px;
+  }
+  
+  .polaroid.p2 {
+    width: 145px;
+    right: 4%;
+  }
+  
+  .stamp-badge {
+    width: 96px;
+    height: 96px;
+    left: -15px;
+    bottom: -15px;
+  }
+  
+  .about-polaroid-wrap {
+    width: 270px;
+  }
+  
+  .cta-content h2 {
+    font-size: 2.2rem;
+  }
+  
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .lead-form-wrapper {
+    padding: 30px 20px;
+  }
+
+  .footer-container {
+    grid-template-columns: 1fr;
+    text-align: center;
+    justify-items: center;
+    gap: 30px;
+  }
+  
+  .footer-left,
+  .footer-contact-block,
+  .footer-links {
+    align-items: center;
+  }
+
+  .footer-social-row {
+    align-items: center;
+  }
+
+  .footer-policies {
+    justify-content: center;
+  }
+}
+
+/* Responsive adjustments for Stacked Hero layout */
+@media (max-width: 992px) {
+  .footer-container {
+    grid-template-columns: 1.2fr 1fr;
+    gap: 30px;
+  }
+
+  .hero-visual-stacked {
+    height: 440px;
+    max-width: 700px;
+    margin: 0 auto 30px;
+  }
+  .paint-stroke-bg-stacked {
+    height: 320px;
+    width: 90%;
+  }
+  .hero-photo-main-stacked {
+    top: 50px;
+    height: 300px;
+    width: 52%;
+  }
+  .p1-stacked {
+    width: 32%;
+    top: 15px;
+  }
+  .p2-stacked {
+    width: 32%;
+    top: 200px;
+  }
+  .scattered-stamp-stacked {
+    width: 90px;
+    height: 113px;
+  }
+  .stamp-stacked-1 { bottom: 30px; }
+  .stamp-stacked-2 { bottom: 100px; }
+  .stamp-stacked-3 { top: 120px; }
+  .stamp-stacked-4 { bottom: -10px; }
+  .stamp-stacked-5 { bottom: -5px; }
+
+  .hero-copy-stacked {
+    padding: 0 20px;
+  }
+  .hero-copy-stacked h1 {
+    font-size: 2.8rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero-visual-stacked {
+    height: 350px;
+    max-width: 500px;
+  }
+  .paint-stroke-bg-stacked {
+    height: 250px;
+  }
+  .hero-photo-main-stacked {
+    top: 40px;
+    height: 230px;
+  }
+  .p1-stacked {
+    width: 36%;
+    top: 10px;
+  }
+  .p2-stacked {
+    width: 36%;
+    top: 150px;
+  }
+  .scattered-stamp-stacked {
+    width: 75px;
+    height: 94px;
+  }
+  .stamp-stacked-1 { bottom: 20px; left: 2%; }
+  .stamp-stacked-2 { bottom: 80px; left: 52%; }
+  .stamp-stacked-3 { top: 90px; right: 2%; }
+  .stamp-stacked-4 { bottom: -10px; right: 28%; }
+  .stamp-stacked-5 { bottom: -5px; right: 10%; }
+
+  .hero-copy-stacked h1 {
+    font-size: 2.2rem;
+  }
+  .hero-copy-stacked p {
+    font-size: 1rem;
+  }
+}

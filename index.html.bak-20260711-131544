@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tourism Social Media Management | WYWH Social</title>
+  <meta name="description" content="WYWH Social helps tour operators, museums, attractions, and destination brands turn real-world experiences into content that builds attention and drives bookings.">
+  <link rel="canonical" href="https://wywhsocial.com/">
+
+  <!-- Preload Critical Hero Image -->
+  <link rel="preload" href="images/ashley_street_bw.jpg" as="image">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://wywhsocial.com/">
+  <meta property="og:title" content="Tourism Social Media Management | WYWH Social">
+  <meta property="og:description" content="Turn real-world experiences into content that builds attention and drives bookings. Done-for-you social media for tour operators.">
+  <meta property="og:image" content="https://wywhsocial.com/images/ashley_street_bw.jpg">
+
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://wywhsocial.com/">
+  <meta property="twitter:title" content="Tourism Social Media Management | WYWH Social">
+  <meta property="twitter:description" content="Turn real-world experiences into content that builds attention and drives bookings. Done-for-you social media for tour operators.">
+  <meta property="twitter:image" content="https://wywhsocial.com/images/ashley_street_bw.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/ashley_tropicana.jpg">
+  
+  <!-- Preconnect and Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- CSS Stylesheet -->
+    <link rel="stylesheet" href="style.css?v=20260711-aged-postcard">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "ProfessionalService",
+        "@id": "https://wywhsocial.com/#service",
+        "name": "WYWH Social",
+        "url": "https://wywhsocial.com/",
+        "logo": "https://wywhsocial.com/images/ashley_tropicana.jpg",
+        "image": "https://wywhsocial.com/images/ashley_street_bw.jpg",
+        "description": "Tourism-focused social media strategy, content creation, and management for tour operators, attractions, museums, and destination brands.",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Las Vegas",
+          "addressRegion": "NV",
+          "addressCountry": "US"
+        },
+        "priceRange": "$$$"
+      },
+      {
+        "@type": "Person",
+        "@id": "https://wywhsocial.com/#ashley",
+        "name": "Ashley",
+        "jobTitle": "Founder & Social Media Lead",
+        "worksFor": {
+          "@id": "https://wywhsocial.com/#service"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <!-- Reusable Global SVG Mask Sheet for stamps -->
+  <svg style="display: none;" aria-hidden="true">
+    <defs>
+      <mask id="stamp-mask-global">
+        <rect width="120" height="150" fill="white" rx="4" />
+        <!-- Top and Bottom Edge Perforations -->
+        <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
+        <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
+        <!-- Left and Right Edge Perforations -->
+        <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
+        <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
+      </mask>
+    </defs>
+  </svg>
+
+  <!-- Premium Sticky Header -->
+  <header id="site-header">
+    <nav class="nav-container">
+      <a href="#home" class="logo-block" id="logo-link">
+        <span class="logo-top">Wish You Were Here</span>
+        <span class="logo-main">WYWH</span>
+        <span class="logo-sub">SOCIAL</span>
+      </a>
+      
+      <!-- Mobile Menu Toggle Button -->
+      <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation Menu" aria-expanded="false" aria-controls="nav-menu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </button>
+      
+      <!-- Navigation Links -->
+      <div class="nav-links" id="nav-menu">
+        <a href="#services" class="nav-link" id="nav-services">Services</a>
+        <a href="#about" class="nav-link" id="nav-about">About Ashley</a>
+        <a href="#work" class="nav-link" id="nav-work">Results</a>
+        <a href="#packages" class="nav-link" id="nav-packages">Packages</a>
+        <a href="#contact" class="nav-link" id="nav-contact-link">Contact</a>
+        <a href="#contact" class="btn btn-navy nav-cta" id="nav-audit-btn">Book a Free Audit</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Hero Section (Stacked Layout) -->
+    <section class="hero-section" id="home">
+      <div class="hero-container-stacked">
+        
+        <!-- Centered Visual Collage -->
+        <div class="hero-visual-stacked">
+          <!-- Background paint stroke container -->
+          <div class="paint-stroke-bg-stacked"></div>
+          
+          <!-- Main Hero Photo (Ashley B&W Street) -->
+          <div class="hero-photo-main-stacked">
+            <img src="images/ashley_street_bw.jpg" alt="Grayscale portrait of Ashley on a historic cobblestone street" width="460" height="360" fetchpriority="high">
+          </div>
+          
+          <!-- Polaroid 1 (Color Neon Art) -->
+          <div class="polaroid-stacked p1-stacked">
+            <div class="polaroid-img-wrap">
+              <img src="images/ashley_hero.jpg" alt="Ashley smiling in front of Neon Museum signs" width="260" height="260">
+            </div>
+            <div class="polaroid-caption">MUSEUM OF NEON ART</div>
+          </div>
+          
+          <!-- Polaroid 2 (B&W Tour Bus) -->
+          <div class="polaroid-stacked p2-stacked">
+            <div class="polaroid-img-wrap">
+              <img src="images/ashley_tourbus.jpg" alt="Grayscale portrait of tour bus" class="grayscale-img" width="260" height="260">
+            </div>
+            <div class="polaroid-caption">TOUR BUS</div>
+          </div>
+
+          <!-- Scattered Stamps (using global SVG mask) -->
+          <!-- Stamp 1 (Eiffel Tower/Paris - Bottom Left) -->
+          <div class="scattered-stamp-stacked stamp-stacked-1" aria-hidden="true">
+            <svg viewBox="0 0 120 150">
+              <rect width="120" height="150" fill="#fff5f2" mask="url(#stamp-mask-global)" />
+              <g fill="none" stroke="#d25d43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" mask="url(#stamp-mask-global)" opacity="0.85">
+                <path d="M40,115 L52,50 L60,25 L68,50 L80,115" stroke-width="2" />
+                <path d="M46,115 Q60,95 74,115" />
+                <path d="M50,90 Q60,82 70,90" />
+                <path d="M52,65 Q60,60 68,65" />
+                <line x1="47" y1="90" x2="73" y2="90" stroke-width="1.5" />
+                <line x1="51" y1="65" x2="69" y2="65" stroke-width="1.5" />
+                <line x1="53" y1="45" x2="67" y2="45" />
+                <line x1="56" y1="30" x2="64" y2="30" />
+                <path d="M52,65 L70,90 M68,65 L50,90 M47,90 L73,115 M73,90 L47,115" stroke-width="0.8" />
+                <line x1="60" y1="25" x2="60" y2="12" stroke-width="2" />
+              </g>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#d25d43" text-anchor="middle" letter-spacing="1">PARIS 1925</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
+          </div>
+
+          <!-- Stamp 2 (Italian Coast - Center) -->
+          <div class="scattered-stamp-stacked stamp-stacked-2" aria-hidden="true">
+            <svg viewBox="0 0 120 150">
+              <rect width="120" height="150" fill="#fcf9ec" mask="url(#stamp-mask-global)" />
+              <g fill="none" stroke="#b09347" stroke-width="1.5" mask="url(#stamp-mask-global)" opacity="0.85">
+                <circle cx="60" cy="50" r="18" stroke-dasharray="2,2" />
+                <circle cx="60" cy="50" r="12" />
+                <path d="M20,95 Q30,90 40,95 T60,95 T80,95 T100,95" stroke-width="1" />
+                <path d="M15,103 Q27,99 40,103 T65,103 T90,103 T105,103" stroke-width="1" />
+                <path d="M50,90 L70,90 L67,95 L53,95 Z" fill="#b09347" />
+                <path d="M60,90 L60,65 L50,85 Z" fill="#b09347" />
+                <path d="M62,90 L62,70 L70,87 Z" />
+              </g>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#b09347" text-anchor="middle" letter-spacing="1">ITALIAN COAST</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
+          </div>
+
+          <!-- Stamp 3 (Top Right Polaroid overlap) -->
+          <div class="scattered-stamp-stacked stamp-stacked-3" aria-hidden="true">
+            <svg viewBox="0 0 120 150">
+              <rect width="120" height="150" fill="#f2f7fc" mask="url(#stamp-mask-global)" />
+              <g fill="none" stroke="#4275a4" stroke-width="1.5" stroke-linecap="round" mask="url(#stamp-mask-global)" opacity="0.85">
+                <path d="M20,95 C25,85 45,85 50,95 C55,88 75,88 80,95" stroke-width="1" />
+                <path d="M40,110 C45,103 60,103 65,110 C70,105 85,105 90,110" stroke-width="1" />
+                <g transform="translate(60, 55) rotate(-25)">
+                  <path d="M-30,0 C-10,-5 10,-5 25,0 C15,3 -15,3 -30,0 Z" fill="#4275a4" />
+                  <path d="M-25,0 L-32,-10 L-28,-10 L-20,0 Z" fill="#4275a4" />
+                  <path d="M-5,-2 L0,-22 L8,-22 L3,-2 Z" fill="#4275a4" />
+                  <path d="M-5,2 L-2,15 L5,15 Z" fill="#4275a4" />
+                  <line x1="27" y1="-8" x2="27" y2="8" stroke-width="1.5" />
+                </g>
+              </g>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4275a4" text-anchor="middle" letter-spacing="1">USA POST</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
+          </div>
+
+          <!-- Stamp 4 (Montana - Bottom Right 1) -->
+          <div class="scattered-stamp-stacked stamp-stacked-4" aria-hidden="true">
+            <svg viewBox="0 0 120 150">
+              <rect width="120" height="150" fill="#f0f7f2" mask="url(#stamp-mask-global)" />
+              <g fill="none" stroke="#3b7454" stroke-width="1.5" stroke-linejoin="round" mask="url(#stamp-mask-global)" opacity="0.85">
+                <path d="M15,95 L40,55 L60,80 L85,45 L105,95 Z" stroke-width="2" />
+                <path d="M40,55 L50,85 L85,45" />
+                <line x1="30" y1="71" x2="35" y2="80" stroke-width="1" />
+                <line x1="24" y1="81" x2="29" y2="90" stroke-width="1" />
+                <line x1="75" y1="61" x2="80" y2="70" stroke-width="1" />
+                <line x1="68" y1="73" x2="73" y2="82" stroke-width="1" />
+                <path d="M30,105 L35,95 L40,105 Z M35,95 L35,110" fill="#3b7454" stroke-width="1" />
+                <path d="M80,108 L85,98 L90,108 Z M85,98 L85,112" fill="#3b7454" stroke-width="1" />
+                <path d="M55,102 L60,90 L65,102 Z M60,90 L60,108" fill="#3b7454" stroke-width="1" />
+              </g>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#3b7454" text-anchor="middle" letter-spacing="1">MONTANA</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
+          </div>
+
+          <!-- Stamp 5 (New York - Bottom Right 2) -->
+          <div class="scattered-stamp-stacked stamp-stacked-5" aria-hidden="true">
+            <svg viewBox="0 0 120 150">
+              <rect width="120" height="150" fill="#faf2ed" mask="url(#stamp-mask-global)" />
+              <g fill="none" stroke="#bf6a45" stroke-width="1.5" stroke-linejoin="round" mask="url(#stamp-mask-global)" opacity="0.85">
+                <path d="M30,50 L15,40 M35,40 L22,25 M60,30 L60,10 M85,40 L98,25 M90,50 L105,40" stroke-width="1" stroke-dasharray="2,2" />
+                <rect x="35" y="90" width="50" height="25" />
+                <rect x="42" y="75" width="36" height="15" />
+                <rect x="47" y="55" width="26" height="20" />
+                <rect x="52" y="35" width="16" height="20" />
+                <line x1="60" y1="35" x2="60" y2="15" stroke-width="2" />
+                <line x1="55" y1="40" x2="55" y2="50" stroke-width="1" />
+                <line x1="65" y1="40" x2="65" y2="50" stroke-width="1" />
+                <line x1="52" y1="60" x2="52" y2="70" stroke-width="1" />
+                <line x1="60" y1="60" x2="60" y2="70" stroke-width="1" />
+                <line x1="68" y1="60" x2="68" y2="70" stroke-width="1" />
+              </g>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#bf6a45" text-anchor="middle" letter-spacing="1">NEW YORK</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
+          </div>
+        </div>
+
+        <!-- Stacked Copy below Visual -->
+        <div class="hero-copy-stacked">
+          <h1>Make them wish<br>they were there.</h1>
+          <p>Social media strategy, content, and storytelling for tour operators, attractions, museums, and destination brands.</p>
+          <div class="hero-buttons-stacked">
+            <a href="#contact" class="btn btn-navy" id="hero-audit-btn-stacked">Book a Free Social Audit</a>
+            <a href="#work" class="btn btn-outline" id="hero-work-btn-stacked">See Our Work</a>
+          </div>
+        </div>
+        
+      </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section class="light-section pain-points-section">
+      <div class="container">
+        <h2 class="section-title">Your guests love the experience.<br>Your social media should make everyone else jealous.</h2>
+        <div class="section-underline"></div>
+        
+        <div class="cards-grid pain-points-grid">
+          <!-- Inconsistent Posting -->
+          <div class="card pain-point-card" id="pain-point-posting">
+            <div class="icon-circle ic-sky">
+              <!-- Clock Icon -->
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="10"></circle>
+                <polyline points="12 6 12 12 16 14"></polyline>
+              </svg>
+            </div>
+            <h3>Inconsistent posting</h3>
+            <p>Sporadic content won't build trust or keep your brand top of mind.</p>
+          </div>
+          
+          <!-- No Time to Create -->
+          <div class="card pain-point-card" id="pain-point-time">
+            <div class="icon-circle ic-olive">
+              <!-- Calendar/Checklist Icon -->
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                <line x1="16" y1="2" x2="16" y2="6"></line>
+                <line x1="8" y1="2" x2="8" y2="6"></line>
+                <line x1="3" y1="10" x2="21" y2="10"></line>
+                <path d="M9 16l2 2 4-4"></path>
+              </svg>
+            </div>
+            <h3>No time to create</h3>
+            <p>You're running unforgettable experiences, not editing reels.</p>
+          </div>
+          
+          <!-- Generic Marketers -->
+          <div class="card pain-point-card" id="pain-point-marketers">
+            <div class="icon-circle ic-coral">
+              <!-- Users Icon -->
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                <circle cx="9" cy="7" r="4"></circle>
+                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+              </svg>
+            </div>
+            <h3>Generic marketers</h3>
+            <p>They don't get tourism—your audience, your season, or your story.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services / How We Help Section -->
+    <section class="cream-section services-section" id="services">
+      <!-- Scattered Stamp 2 (Autumn Road) -->
+      <div class="scattered-stamp stamp-services-1">
+        <svg viewBox="0 0 120 150">
+          <defs>
+            <mask id="stamp-mask-services">
+              <rect width="120" height="150" fill="white" rx="4" />
+              <!-- Top and Bottom Edge Perforations -->
+              <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
+              <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
+              <!-- Left and Right Edge Perforations -->
+              <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
+              <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
+            </mask>
+          </defs>
+          <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-services)" />
+          <image href="images/autumn_road.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-services)" />
+          <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8a9860" text-anchor="middle" letter-spacing="1">WYWH SOCIAL</text>
+        </svg>
+        <div class="stamp-cancellation"></div>
+      </div>
+      
+      <div class="container">
+        <h2 class="section-title">How we help.</h2>
+        <div class="section-underline"></div>
+        
+        <div class="cards-grid services-grid">
+          <!-- Social Media Management -->
+          <div class="card service-card" id="service-management">
+            <div class="icon-circle ic-sky">
+              <!-- Mobile Phone Icon -->
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="5" y="2" width="14" height="20" rx="2" ry="2"></rect>
+                <line x1="12" y1="18" x2="12.01" y2="18"></line>
+                <path d="M9 6h6M9 10h6M9 14h3"></path>
+              </svg>
+            </div>
+            <h3>Full-Service Social Management</h3>
+            <p>Done-for-you content, reels, and stories that turn casual viewers into booked guests. We manage your feed so you can run the tours.</p>
+            <a href="#contact" class="learn-more-link" id="learn-more-mgmt">Learn more &rarr;</a>
+          </div>
+          
+          <!-- Brand Storytelling -->
+          <div class="card service-card" id="service-storytelling">
+            <div class="icon-circle ic-olive">
+              <!-- Open Book Icon -->
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"></path>
+                <path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"></path>
+              </svg>
+            </div>
+            <h3>Tourism Storytelling</h3>
+            <p>Compelling copywriting, narrative strategy, and visual concepts designed to capture the heart of your experience and fill seats.</p>
+            <a href="#contact" class="learn-more-link" id="learn-more-story">Learn more &rarr;</a>
+          </div>
+          
+          <!-- Free Social Audit -->
+          <div class="card service-card" id="service-audit">
+            <div class="icon-circle ic-coral">
+              <!-- Mail/Postmark Icon -->
+              <svg viewBox="0 0 24 24" width="26" height="26" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                <polyline points="22,6 12,13 2,6"></polyline>
+              </svg>
+            </div>
+            <h3>The Postmark: Free Social Audit</h3>
+            <p>A custom 15-minute audit of your tour company's social channels showing exactly where you are losing bookings.</p>
+            <a href="#contact" class="learn-more-link" id="learn-more-audit">Learn more &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+      <div class="about-container">
+        <div class="about-visual">
+          <!-- Scattered Stamp 4 (Ashley Tropicana Sign) -->
+          <div class="scattered-stamp stamp-about-1" aria-hidden="true">
+            <svg viewBox="0 0 120 150">
+              <rect width="120" height="150" fill="#fcf9ec" mask="url(#stamp-mask-global)" />
+              <g fill="none" stroke="#b09347" stroke-width="1.5" mask="url(#stamp-mask-global)" opacity="0.85">
+                <circle cx="60" cy="65" r="30" />
+                <circle cx="60" cy="65" r="24" stroke-dasharray="2,2" />
+                <text x="60" y="60" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#b09347" text-anchor="middle">WYWH</text>
+                <text x="60" y="72" font-family="'Poppins', sans-serif" font-size="6" fill="#b09347" text-anchor="middle">CREATIVE</text>
+                <text x="60" y="82" font-family="'Poppins', sans-serif" font-size="5" fill="#b09347" text-anchor="middle">★ USA ★</text>
+              </g>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#b09347" text-anchor="middle" letter-spacing="1">ABOUT ASHLEY</text>
+            </svg>
+            <div class="stamp-cancellation"></div>
+          </div>
+          
+          <!-- Polaroid Photo of Ashley with Bus -->
+          <div class="about-polaroid-wrap">
+            <div class="polaroid about-polaroid">
+              <div class="polaroid-img-wrap">
+                <img src="images/ashley_about.jpg" alt="Ashley smiling in front of Spanish moss oak trees and historic red brick building" width="280" height="280" loading="lazy">
+              </div>
+              <div class="about-polaroid-badge" aria-hidden="true">
+                <span>WISH YOU</span>
+                <span>WYWH</span>
+                <span>WERE HERE</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="about-content">
+          <p class="eyebrow">Behind the postcard</p>
+          <h2>Hi, I'm Ashley.</h2>
+          <p>I've spent 20+ years in the tourism trenches—leading tours, managing museum experiences, and filling guide sheets. I know what makes tourists tick, and more importantly, what makes them click "book".</p>
+          <p>Now, I run <strong>WYWH Social</strong> to help tour operators, destinations, and heritage brands turn their real-life experiences into scroll-stopping, booking-driving social media content.</p>
+          <p class="signature-text">Your life is in my DNA. Storytelling is my craft. ♡</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Case Studies / Work Section -->
+    <section class="cream-section work-section" id="work">
+      <!-- Scattered Stamp 3 (Washington Monument) -->
+      <div class="scattered-stamp stamp-work-1" aria-hidden="true">
+        <svg viewBox="0 0 120 150">
+          <rect width="120" height="150" fill="#f2f7fc" mask="url(#stamp-mask-global)" />
+          <g fill="none" stroke="#4275a4" stroke-width="1.5" mask="url(#stamp-mask-global)" opacity="0.85">
+            <path d="M30,35 L90,35 L90,95 L30,95 Z" />
+            <path d="M35,40 L85,40 L85,90 L35,90 Z" stroke-dasharray="2,2" />
+            <text x="60" y="58" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4275a4" text-anchor="middle">WYWH</text>
+            <text x="60" y="70" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#4275a4" text-anchor="middle">100%</text>
+            <text x="60" y="82" font-family="'Poppins', sans-serif" font-size="6" fill="#4275a4" text-anchor="middle">RESULTS</text>
+          </g>
+          <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4275a4" text-anchor="middle" letter-spacing="1">POSTAL SERVICE</text>
+        </svg>
+        <div class="stamp-cancellation"></div>
+      </div>
+      
+      <div class="container">
+        <h2 class="section-title">Real places. Real results.</h2>
+        <div class="section-underline"></div>
+        
+        <div class="cases-grid">
+          <!-- Case Study 1 -->
+          <article class="case-card" id="case-paramount">
+            <div class="case-img-wrap">
+              <img src="images/paramount_theater.jpg" alt="The Paramount theater marquee in Bristol sign" width="360" height="240" loading="lazy">
+            </div>
+            <div class="case-content">
+              <div class="case-meta">Historic Theater • 3 Months</div>
+              <h3>Attention Marketing Made Easy</h3>
+              <p><strong>Problem:</strong> Flat off-season ticket sales and low social engagement.<br>
+              <strong>Action:</strong> Produced high-energy behind-the-scenes artist interviews and localized nostalgia reels.<br>
+              <strong>Result:</strong> 556% engagement increase year-over-year, resulting in sold-out off-season theater runs.</p>
+              <a href="#contact" class="case-view-link" id="view-case-paramount">Ask about this project &rarr;</a>
+            </div>
+          </article>
+          
+          <!-- Case Study 2 -->
+          <article class="case-card" id="case-elk">
+            <div class="case-img-wrap">
+              <img src="images/elk_meadow.jpg" alt="An elk standing in a foggy green field with mountains" width="360" height="240" loading="lazy">
+            </div>
+            <div class="case-content">
+              <div class="case-meta">Eco-Lodge & Tours • 6 Months</div>
+              <h3>Destination Storytelling</h3>
+              <p><strong>Problem:</strong> Weak digital reach and failure to capture the beauty of the surrounding wilderness.<br>
+              <strong>Action:</strong> Implemented a weekly wildlife-guide storytelling show and targeted Instagram reels.<br>
+              <strong>Result:</strong> 4× organic follower growth, leading directly to a 35% increase in seasonal bookings.</p>
+              <a href="#contact" class="case-view-link" id="view-case-elk">Ask about this project &rarr;</a>
+            </div>
+          </article>
+          
+          <!-- Case Study 3 -->
+          <article class="case-card" id="case-museum">
+            <div class="case-img-wrap">
+              <img src="images/ashley_tropicana.jpg" alt="Ashley pointing at the Riviera Tropicana neon museum sign" width="360" height="240" loading="lazy">
+            </div>
+            <div class="case-content">
+              <div class="case-meta">Heritage Museum • 4 Months</div>
+              <h3>Museum Moments That Matter</h3>
+              <p><strong>Problem:</strong> Static physical exhibits failing to engage younger tourist demographics.<br>
+              <strong>Action:</strong> Created a highly interactive user-generated campaign turning displays into story cards.<br>
+              <strong>Result:</strong> 150% visitor share rate increase and double the click-through rate on ticket booking page.</p>
+              <a href="#contact" class="case-view-link" id="view-case-museum">Ask about this project &rarr;</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="light-section process-section">
+      <div class="container">
+        <h2 class="section-title">A simple process. Thoughtful results.</h2>
+        <div class="section-underline"></div>
+        
+        <div class="process-steps-wrap">
+          <div class="process-steps-line"></div>
+          <div class="process-steps">
+            <!-- Step 1 -->
+            <div class="step-card" id="step-discover">
+              <div class="step-num">1</div>
+              <h3>Discover</h3>
+              <p>We learn your story, goals, and audience.</p>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="step-card" id="step-plan">
+              <div class="step-num">2</div>
+              <h3>Plan</h3>
+              <p>We create a strategy that fits your season and your space.</p>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="step-card" id="step-create">
+              <div class="step-num">3</div>
+              <h3>Create</h3>
+              <p>We craft content that connects and converts.</p>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="step-card" id="step-deliver">
+              <div class="step-num">4</div>
+              <h3>Deliver</h3>
+              <p>We post, engage, and optimize for ongoing growth.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Packages Section -->
+    <section class="cream-section packages-section" id="packages">
+      <div class="container">
+        <h2 class="section-title">Packages to fit your journey.</h2>
+        <div class="section-underline"></div>
+        
+        <div class="packages-grid">
+          <!-- Package 1: Postcard -->
+          <div class="package-card" id="pkg-postcard">
+            <div class="package-header">
+              <div class="pkg-label left">Postcard</div>
+              <h3>Postcard</h3>
+            </div>
+            <ul class="pkg-deliverables">
+              <li>Monthly content plan</li>
+              <li>8 feed posts per month</li>
+              <li>Caption writing & hashtags</li>
+              <li>Basic scheduling & publishing</li>
+              <li>Monthly performance report</li>
+            </ul>
+            <div class="package-footer">
+              <span class="pkg-price">Starting at $750/mo</span>
+            </div>
+          </div>
+          
+          <!-- Package 2: Dispatch -->
+          <div class="package-card featured" id="pkg-dispatch">
+            <div class="package-header">
+              <div class="pkg-label mid">Dispatch</div>
+              <h3>Dispatch</h3>
+            </div>
+            <ul class="pkg-deliverables">
+              <li>12–16 customized feed posts</li>
+              <li>Short-form video editing (Reels/TikTok)</li>
+              <li>Active Stories strategy (2-3/week)</li>
+              <li>Daily community engagement</li>
+              <li>Monthly strategy alignment call</li>
+            </ul>
+            <div class="package-footer">
+              <span class="pkg-price">Starting at $1,600/mo</span>
+            </div>
+          </div>
+          
+          <!-- Package 3: Full Correspondence -->
+          <div class="package-card" id="pkg-correspondence">
+            <div class="package-header">
+              <div class="pkg-label right">Full Correspondence</div>
+              <h3>Full Correspondence</h3>
+            </div>
+            <ul class="pkg-deliverables">
+              <li>Full multi-channel management</li>
+              <li>On-location content capture</li>
+              <li>Reels & custom video campaigns</li>
+              <li>Paid ads set up & campaign support</li>
+              <li>Full analytics, optimization & strategy</li>
+            </ul>
+            <div class="package-footer">
+              <span class="pkg-price">Starting at $2,800/mo</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA Contact Section -->
+    <section class="cta-section" id="contact">
+      <!-- Background elements for stamp/postmark look -->
+      <div class="cta-postmark" aria-hidden="true"></div>
+      <div class="cta-stamp-badge" aria-hidden="true">
+        <svg viewBox="0 0 24 24" width="36" height="36" fill="currentColor">
+          <path d="M2,21L23,12L2,3V10L17,12L2,14V21Z"/>
+        </svg>
+      </div>
+      
+      <div class="cta-container">
+        <div class="cta-content">
+          <h2>Let's bring your feed<br>back from vacation mode.</h2>
+          <p class="cta-subhead">Request your free 15-minute social audit. We'll show you exactly where your channels are losing bookings.</p>
+        </div>
+
+        <!-- Real Lead Capture Form -->
+        <div class="lead-form-wrapper">
+          <form id="lead-form" class="lead-form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-name">Your Name *</label>
+                <input type="text" id="lead-name" name="name" required placeholder="Ashley Smith">
+              </div>
+              <div class="form-group">
+                <label for="lead-email">Email Address *</label>
+                <input type="email" id="lead-email" name="email" required placeholder="ashley@company.com">
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="lead-company">Company Name *</label>
+                <input type="text" id="lead-company" name="company" required placeholder="Wild River Tours">
+              </div>
+              <div class="form-group">
+                <label for="lead-website">Website URL</label>
+                <input type="url" id="lead-website" name="website" placeholder="www.wildrivertours.com">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="lead-service">What service are you looking for? *</label>
+              <select id="lead-service" name="service" required>
+                <option value="" disabled selected>Select an option...</option>
+                <option value="audit">Free Social Audit (The Postmark)</option>
+                <option value="management">Full-Service Social Management</option>
+                <option value="storytelling">Tourism Storytelling & Creative</option>
+                <option value="custom">Custom Partnership / Other</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="lead-challenge">What is your biggest current social media challenge? *</label>
+              <textarea id="lead-challenge" name="challenge" required placeholder="E.g. We have no time to film Reels, our engagement has tanked, or we aren't getting bookings from Instagram..."></textarea>
+            </div>
+
+            <div class="form-group">
+              <label for="lead-budget">Approximate Monthly Budget (USD)</label>
+              <select id="lead-budget" name="budget">
+                <option value="" selected>Select a range...</option>
+                <option value="under-1k">Under $1,000 / mo</option>
+                <option value="1k-2k">$1,000 - $2,000 / mo</option>
+                <option value="2k-4k">$2,000 - $4,000 / mo</option>
+                <option value="4k-plus">$4,000+ / mo</option>
+                <option value="not-sure">Not sure yet</option>
+              </select>
+            </div>
+
+            <button type="submit" class="btn btn-coral" id="lead-submit-btn">Request My Free Audit</button>
+          </form>
+
+          <!-- Submission Confirmation Success State -->
+          <div id="lead-success" class="lead-success-msg" style="display: none;">
+            <div class="success-icon">✓</div>
+            <h3>Postcard is in the mail!</h3>
+            <p>Thanks for reaching out! Ashley will audit your channels and get back to you within 2 business days with your customized audit report.</p>
+            <p class="cta-calendly">Want to jump the queue? Book a quick chat directly on Ashley's calendar:</p>
+            <a href="https://calendly.com" target="_blank" rel="noopener noreferrer" class="btn btn-navy" id="success-calendly-btn">Schedule Call (Calendly) &rarr;</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer id="site-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <div class="footer-logo-block">
+          <span class="logo-top">Wish You Were Here</span>
+          <span class="logo-main">WYWH</span>
+          <span class="logo-sub">SOCIAL</span>
+        </div>
+        <p class="footer-tagline">Serving tour operators and destination brands nationwide. Based in the USA.</p>
+      </div>
+
+      <div class="footer-middle">
+        <div class="footer-links">
+          <a href="#services">Services</a>
+          <a href="#about">About Ashley</a>
+          <a href="#work">Results</a>
+          <a href="#packages">Packages</a>
+          <a href="#contact">Contact</a>
+        </div>
+        <div class="footer-policies">
+          <a href="#privacy" class="policy-link">Privacy Policy</a>
+          <a href="#terms" class="policy-link">Terms & Conditions</a>
+        </div>
+      </div>
+      
+      <div class="footer-contact-block">
+        <a href="mailto:ashley@wywhsocial.com" class="footer-email" id="footer-email-link">ashley@wywhsocial.com</a>
+        <div class="footer-social-row">
+          <a href="https://instagram.com/wywhsocial" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Follow us on Instagram" id="footer-instagram-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+              <line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line>
+            </svg>
+            <span class="social-handle">@wywhsocial</span>
+          </a>
+          <a href="https://linkedin.com" class="footer-social-icon" target="_blank" rel="noopener noreferrer" aria-label="Connect with Ashley on LinkedIn" id="footer-linkedin-link">
+            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            <span class="social-handle">LinkedIn</span>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 WYWH Social. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- JS Script -->
+  <script src="app.js"></script>
+</body>
+</html>

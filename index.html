@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260711-usa-travel-stamps">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -115,8 +115,59 @@
   </header>
 
   <main>
-    <!-- Hero Section (Stacked Layout) -->
+    <!-- Hero Section — reads as the face of a vintage postcard -->
     <section class="hero-section" id="home">
+      <!-- Background ink postmarks (decorative; from reference stamp sheet) -->
+      <div class="hero-ink-layer" aria-hidden="true">
+        <!-- London circle + classic wavy cancel bars sweeping through it -->
+        <svg class="ink-postmark ink-postmark-1" viewBox="0 0 220 160" fill="none">
+          <circle cx="72" cy="80" r="62" stroke="currentColor" stroke-width="2.2"/>
+          <circle cx="72" cy="80" r="54" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2.5"/>
+          <text x="72" y="62" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="10" font-weight="700" fill="currentColor" letter-spacing="1.2">LONDON · S.W.</text>
+          <text x="72" y="86" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="12" font-weight="700" fill="currentColor">31 JULY</text>
+          <text x="72" y="106" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="13" font-weight="700" fill="currentColor">1957</text>
+          <!-- Curvy killer bars (wavy cancel lines) -->
+          <g stroke="currentColor" stroke-width="2.1" stroke-linecap="round" fill="none" opacity="0.92">
+            <path d="M4 48 C28 40, 52 56, 76 48 S124 40, 148 48 S196 56, 216 46"/>
+            <path d="M4 60 C28 52, 52 68, 76 60 S124 52, 148 60 S196 68, 216 58"/>
+            <path d="M4 72 C28 64, 52 80, 76 72 S124 64, 148 72 S196 80, 216 70"/>
+            <path d="M4 84 C28 76, 52 92, 76 84 S124 76, 148 84 S196 92, 216 82"/>
+            <path d="M4 96 C28 88, 52 104, 76 96 S124 88, 148 96 S196 104, 216 94"/>
+            <path d="M4 108 C28 100, 52 116, 76 108 S124 100, 148 108 S196 116, 216 106"/>
+          </g>
+        </svg>
+        <svg class="ink-postmark ink-postmark-2" viewBox="0 0 150 150" fill="none">
+          <circle cx="75" cy="75" r="66" stroke="currentColor" stroke-width="2"/>
+          <path d="M35 35l80 80M115 35L35 115" stroke="currentColor" stroke-width="1.6"/>
+          <text x="75" y="68" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="12" font-weight="700" fill="currentColor" letter-spacing="1">NORTH POLE</text>
+          <text x="75" y="92" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="10" fill="currentColor">MAY 20 1953</text>
+        </svg>
+        <!-- Standalone bank of curvy cancel lines (no rectangle — pure wavy ink) -->
+        <svg class="ink-postmark ink-postmark-3" viewBox="0 0 200 100" fill="none">
+          <g stroke="currentColor" stroke-width="2.35" stroke-linecap="round" fill="none">
+            <path d="M6 18 C30 8, 54 28, 78 18 S126 8, 150 18 S178 28, 194 16"/>
+            <path d="M6 30 C30 20, 54 40, 78 30 S126 20, 150 30 S178 40, 194 28"/>
+            <path d="M6 42 C30 32, 54 52, 78 42 S126 32, 150 42 S178 52, 194 40"/>
+            <path d="M6 54 C30 44, 54 64, 78 54 S126 44, 150 54 S178 64, 194 52"/>
+            <path d="M6 66 C30 56, 54 76, 78 66 S126 56, 150 66 S178 76, 194 64"/>
+            <path d="M6 78 C30 68, 54 88, 78 78 S126 68, 150 78 S178 88, 194 76"/>
+          </g>
+        </svg>
+        <svg class="ink-postmark ink-postmark-4" viewBox="0 0 140 140" fill="none">
+          <circle cx="70" cy="70" r="58" stroke="currentColor" stroke-width="1.8" stroke-dasharray="4 3"/>
+          <circle cx="70" cy="70" r="48" stroke="currentColor" stroke-width="1.2"/>
+          <text x="70" y="58" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="10" font-weight="700" fill="currentColor" letter-spacing="2">POSTAGE</text>
+          <path d="M48 78c8-10 36-10 44 0" stroke="currentColor" stroke-width="1.4"/>
+          <text x="70" y="98" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="9" fill="currentColor">PAID</text>
+        </svg>
+        <svg class="ink-postmark ink-postmark-5" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="1.6"/>
+          <text x="60" y="48" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="9" font-weight="700" fill="currentColor" letter-spacing="1">RECEIVED</text>
+          <text x="60" y="68" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="12" font-weight="700" fill="currentColor">12 JUL</text>
+          <text x="60" y="86" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="10" fill="currentColor">U.S.P.O.</text>
+        </svg>
+      </div>
+
       <div class="hero-container-stacked">
         
         <!-- Centered Visual Collage -->
@@ -145,105 +196,33 @@
             <div class="polaroid-caption">TOUR BUS</div>
           </div>
 
-          <!-- Scattered Stamps (using global SVG mask) -->
-          <!-- Stamp 1 (Eiffel Tower/Paris - Bottom Left) -->
+          <!-- Vintage USA travel stamps (parks, states, cities) -->
           <div class="scattered-stamp-stacked stamp-stacked-1" aria-hidden="true">
-            <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#fff5f2" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#d25d43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" mask="url(#stamp-mask-global)" opacity="0.85">
-                <path d="M40,115 L52,50 L60,25 L68,50 L80,115" stroke-width="2" />
-                <path d="M46,115 Q60,95 74,115" />
-                <path d="M50,90 Q60,82 70,90" />
-                <path d="M52,65 Q60,60 68,65" />
-                <line x1="47" y1="90" x2="73" y2="90" stroke-width="1.5" />
-                <line x1="51" y1="65" x2="69" y2="65" stroke-width="1.5" />
-                <line x1="53" y1="45" x2="67" y2="45" />
-                <line x1="56" y1="30" x2="64" y2="30" />
-                <path d="M52,65 L70,90 M68,65 L50,90 M47,90 L73,115 M73,90 L47,115" stroke-width="0.8" />
-                <line x1="60" y1="25" x2="60" y2="12" stroke-width="2" />
-              </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#d25d43" text-anchor="middle" letter-spacing="1">PARIS 1925</text>
-            </svg>
+            <img src="images/1.png" alt="Classic Postage Stamp" class="stamp-image-png" loading="eager">
             <div class="stamp-cancellation"></div>
           </div>
 
-          <!-- Stamp 2 (Italian Coast - Center) -->
+          <!-- Stamp 2 -->
           <div class="scattered-stamp-stacked stamp-stacked-2" aria-hidden="true">
-            <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#fcf9ec" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#b09347" stroke-width="1.5" mask="url(#stamp-mask-global)" opacity="0.85">
-                <circle cx="60" cy="50" r="18" stroke-dasharray="2,2" />
-                <circle cx="60" cy="50" r="12" />
-                <path d="M20,95 Q30,90 40,95 T60,95 T80,95 T100,95" stroke-width="1" />
-                <path d="M15,103 Q27,99 40,103 T65,103 T90,103 T105,103" stroke-width="1" />
-                <path d="M50,90 L70,90 L67,95 L53,95 Z" fill="#b09347" />
-                <path d="M60,90 L60,65 L50,85 Z" fill="#b09347" />
-                <path d="M62,90 L62,70 L70,87 Z" />
-              </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#b09347" text-anchor="middle" letter-spacing="1">ITALIAN COAST</text>
-            </svg>
+            <img src="images/2.png" alt="Classic Postage Stamp" class="stamp-image-png" loading="eager">
             <div class="stamp-cancellation"></div>
           </div>
 
-          <!-- Stamp 3 (Top Right Polaroid overlap) -->
+          <!-- Stamp 3 -->
           <div class="scattered-stamp-stacked stamp-stacked-3" aria-hidden="true">
-            <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#f2f7fc" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#4275a4" stroke-width="1.5" stroke-linecap="round" mask="url(#stamp-mask-global)" opacity="0.85">
-                <path d="M20,95 C25,85 45,85 50,95 C55,88 75,88 80,95" stroke-width="1" />
-                <path d="M40,110 C45,103 60,103 65,110 C70,105 85,105 90,110" stroke-width="1" />
-                <g transform="translate(60, 55) rotate(-25)">
-                  <path d="M-30,0 C-10,-5 10,-5 25,0 C15,3 -15,3 -30,0 Z" fill="#4275a4" />
-                  <path d="M-25,0 L-32,-10 L-28,-10 L-20,0 Z" fill="#4275a4" />
-                  <path d="M-5,-2 L0,-22 L8,-22 L3,-2 Z" fill="#4275a4" />
-                  <path d="M-5,2 L-2,15 L5,15 Z" fill="#4275a4" />
-                  <line x1="27" y1="-8" x2="27" y2="8" stroke-width="1.5" />
-                </g>
-              </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4275a4" text-anchor="middle" letter-spacing="1">USA POST</text>
-            </svg>
+            <img src="images/3.png" alt="Classic Postage Stamp" class="stamp-image-png" loading="eager">
             <div class="stamp-cancellation"></div>
           </div>
 
-          <!-- Stamp 4 (Montana - Bottom Right 1) -->
+          <!-- Stamp 4 -->
           <div class="scattered-stamp-stacked stamp-stacked-4" aria-hidden="true">
-            <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#f0f7f2" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#3b7454" stroke-width="1.5" stroke-linejoin="round" mask="url(#stamp-mask-global)" opacity="0.85">
-                <path d="M15,95 L40,55 L60,80 L85,45 L105,95 Z" stroke-width="2" />
-                <path d="M40,55 L50,85 L85,45" />
-                <line x1="30" y1="71" x2="35" y2="80" stroke-width="1" />
-                <line x1="24" y1="81" x2="29" y2="90" stroke-width="1" />
-                <line x1="75" y1="61" x2="80" y2="70" stroke-width="1" />
-                <line x1="68" y1="73" x2="73" y2="82" stroke-width="1" />
-                <path d="M30,105 L35,95 L40,105 Z M35,95 L35,110" fill="#3b7454" stroke-width="1" />
-                <path d="M80,108 L85,98 L90,108 Z M85,98 L85,112" fill="#3b7454" stroke-width="1" />
-                <path d="M55,102 L60,90 L65,102 Z M60,90 L60,108" fill="#3b7454" stroke-width="1" />
-              </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#3b7454" text-anchor="middle" letter-spacing="1">MONTANA</text>
-            </svg>
+            <img src="images/4.png" alt="Classic Postage Stamp" class="stamp-image-png" loading="eager">
             <div class="stamp-cancellation"></div>
           </div>
 
-          <!-- Stamp 5 (New York - Bottom Right 2) -->
+          <!-- Stamp 5 -->
           <div class="scattered-stamp-stacked stamp-stacked-5" aria-hidden="true">
-            <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#faf2ed" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#bf6a45" stroke-width="1.5" stroke-linejoin="round" mask="url(#stamp-mask-global)" opacity="0.85">
-                <path d="M30,50 L15,40 M35,40 L22,25 M60,30 L60,10 M85,40 L98,25 M90,50 L105,40" stroke-width="1" stroke-dasharray="2,2" />
-                <rect x="35" y="90" width="50" height="25" />
-                <rect x="42" y="75" width="36" height="15" />
-                <rect x="47" y="55" width="26" height="20" />
-                <rect x="52" y="35" width="16" height="20" />
-                <line x1="60" y1="35" x2="60" y2="15" stroke-width="2" />
-                <line x1="55" y1="40" x2="55" y2="50" stroke-width="1" />
-                <line x1="65" y1="40" x2="65" y2="50" stroke-width="1" />
-                <line x1="52" y1="60" x2="52" y2="70" stroke-width="1" />
-                <line x1="60" y1="60" x2="60" y2="70" stroke-width="1" />
-                <line x1="68" y1="60" x2="68" y2="70" stroke-width="1" />
-              </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#bf6a45" text-anchor="middle" letter-spacing="1">NEW YORK</text>
-            </svg>
+            <img src="images/5.png" alt="Classic Postage Stamp" class="stamp-image-png" loading="eager">
             <div class="stamp-cancellation"></div>
           </div>
         </div>
@@ -318,23 +297,9 @@
     <!-- Services / How We Help Section -->
     <section class="cream-section services-section" id="services">
       <!-- Scattered Stamp 2 (Autumn Road) -->
-      <div class="scattered-stamp stamp-services-1">
-        <svg viewBox="0 0 120 150">
-          <defs>
-            <mask id="stamp-mask-services">
-              <rect width="120" height="150" fill="white" rx="4" />
-              <!-- Top and Bottom Edge Perforations -->
-              <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
-              <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-              <!-- Left and Right Edge Perforations -->
-              <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
-              <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
-            </mask>
-          </defs>
-          <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-services)" />
-          <image href="images/autumn_road.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-services)" />
-          <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8a9860" text-anchor="middle" letter-spacing="1">WYWH SOCIAL</text>
-        </svg>
+      <!-- Scattered Stamp 2 -->
+      <div class="scattered-stamp stamp-services-1" aria-hidden="true">
+        <img src="images/6.png" alt="Classic Postage Stamp" class="stamp-image-png" loading="lazy">
         <div class="stamp-cancellation"></div>
       </div>
       
@@ -393,19 +358,9 @@
     <section class="about-section" id="about">
       <div class="about-container">
         <div class="about-visual">
-          <!-- Scattered Stamp 4 (Ashley Tropicana Sign) -->
+          <!-- Scattered Stamp 4 -->
           <div class="scattered-stamp stamp-about-1" aria-hidden="true">
-            <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#fcf9ec" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#b09347" stroke-width="1.5" mask="url(#stamp-mask-global)" opacity="0.85">
-                <circle cx="60" cy="65" r="30" />
-                <circle cx="60" cy="65" r="24" stroke-dasharray="2,2" />
-                <text x="60" y="60" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#b09347" text-anchor="middle">WYWH</text>
-                <text x="60" y="72" font-family="'Poppins', sans-serif" font-size="6" fill="#b09347" text-anchor="middle">CREATIVE</text>
-                <text x="60" y="82" font-family="'Poppins', sans-serif" font-size="5" fill="#b09347" text-anchor="middle">★ USA ★</text>
-              </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#b09347" text-anchor="middle" letter-spacing="1">ABOUT ASHLEY</text>
-            </svg>
+            <img src="images/7.png" alt="Classic Postage Stamp" class="stamp-image-png" loading="lazy">
             <div class="stamp-cancellation"></div>
           </div>
           
@@ -436,19 +391,9 @@
 
     <!-- Case Studies / Work Section -->
     <section class="cream-section work-section" id="work">
-      <!-- Scattered Stamp 3 (Washington Monument) -->
+      <!-- Scattered Stamp 3 -->
       <div class="scattered-stamp stamp-work-1" aria-hidden="true">
-        <svg viewBox="0 0 120 150">
-          <rect width="120" height="150" fill="#f2f7fc" mask="url(#stamp-mask-global)" />
-          <g fill="none" stroke="#4275a4" stroke-width="1.5" mask="url(#stamp-mask-global)" opacity="0.85">
-            <path d="M30,35 L90,35 L90,95 L30,95 Z" />
-            <path d="M35,40 L85,40 L85,90 L35,90 Z" stroke-dasharray="2,2" />
-            <text x="60" y="58" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4275a4" text-anchor="middle">WYWH</text>
-            <text x="60" y="70" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#4275a4" text-anchor="middle">100%</text>
-            <text x="60" y="82" font-family="'Poppins', sans-serif" font-size="6" fill="#4275a4" text-anchor="middle">RESULTS</text>
-          </g>
-          <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4275a4" text-anchor="middle" letter-spacing="1">POSTAL SERVICE</text>
-        </svg>
+        <img src="images/8.png" alt="Classic Postage Stamp" class="stamp-image-png" loading="lazy">
         <div class="stamp-cancellation"></div>
       </div>
       
