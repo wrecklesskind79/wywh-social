@@ -33,7 +33,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
   
   <!-- CSS Stylesheet -->
-  <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=20260711-usa-travel-stamps">
 
   <!-- JSON-LD Structured Data -->
   <script type="application/ld+json">
@@ -115,8 +115,59 @@
   </header>
 
   <main>
-    <!-- Hero Section (Stacked Layout) -->
+    <!-- Hero Section — reads as the face of a vintage postcard -->
     <section class="hero-section" id="home">
+      <!-- Background ink postmarks (decorative; from reference stamp sheet) -->
+      <div class="hero-ink-layer" aria-hidden="true">
+        <!-- London circle + classic wavy cancel bars sweeping through it -->
+        <svg class="ink-postmark ink-postmark-1" viewBox="0 0 220 160" fill="none">
+          <circle cx="72" cy="80" r="62" stroke="currentColor" stroke-width="2.2"/>
+          <circle cx="72" cy="80" r="54" stroke="currentColor" stroke-width="1.2" stroke-dasharray="3 2.5"/>
+          <text x="72" y="62" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="10" font-weight="700" fill="currentColor" letter-spacing="1.2">LONDON · S.W.</text>
+          <text x="72" y="86" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="12" font-weight="700" fill="currentColor">31 JULY</text>
+          <text x="72" y="106" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="13" font-weight="700" fill="currentColor">1957</text>
+          <!-- Curvy killer bars (wavy cancel lines) -->
+          <g stroke="currentColor" stroke-width="2.1" stroke-linecap="round" fill="none" opacity="0.92">
+            <path d="M4 48 C28 40, 52 56, 76 48 S124 40, 148 48 S196 56, 216 46"/>
+            <path d="M4 60 C28 52, 52 68, 76 60 S124 52, 148 60 S196 68, 216 58"/>
+            <path d="M4 72 C28 64, 52 80, 76 72 S124 64, 148 72 S196 80, 216 70"/>
+            <path d="M4 84 C28 76, 52 92, 76 84 S124 76, 148 84 S196 92, 216 82"/>
+            <path d="M4 96 C28 88, 52 104, 76 96 S124 88, 148 96 S196 104, 216 94"/>
+            <path d="M4 108 C28 100, 52 116, 76 108 S124 100, 148 108 S196 116, 216 106"/>
+          </g>
+        </svg>
+        <svg class="ink-postmark ink-postmark-2" viewBox="0 0 150 150" fill="none">
+          <circle cx="75" cy="75" r="66" stroke="currentColor" stroke-width="2"/>
+          <path d="M35 35l80 80M115 35L35 115" stroke="currentColor" stroke-width="1.6"/>
+          <text x="75" y="68" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="12" font-weight="700" fill="currentColor" letter-spacing="1">NORTH POLE</text>
+          <text x="75" y="92" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="10" fill="currentColor">MAY 20 1953</text>
+        </svg>
+        <!-- Standalone bank of curvy cancel lines (no rectangle — pure wavy ink) -->
+        <svg class="ink-postmark ink-postmark-3" viewBox="0 0 200 100" fill="none">
+          <g stroke="currentColor" stroke-width="2.35" stroke-linecap="round" fill="none">
+            <path d="M6 18 C30 8, 54 28, 78 18 S126 8, 150 18 S178 28, 194 16"/>
+            <path d="M6 30 C30 20, 54 40, 78 30 S126 20, 150 30 S178 40, 194 28"/>
+            <path d="M6 42 C30 32, 54 52, 78 42 S126 32, 150 42 S178 52, 194 40"/>
+            <path d="M6 54 C30 44, 54 64, 78 54 S126 44, 150 54 S178 64, 194 52"/>
+            <path d="M6 66 C30 56, 54 76, 78 66 S126 56, 150 66 S178 76, 194 64"/>
+            <path d="M6 78 C30 68, 54 88, 78 78 S126 68, 150 78 S178 88, 194 76"/>
+          </g>
+        </svg>
+        <svg class="ink-postmark ink-postmark-4" viewBox="0 0 140 140" fill="none">
+          <circle cx="70" cy="70" r="58" stroke="currentColor" stroke-width="1.8" stroke-dasharray="4 3"/>
+          <circle cx="70" cy="70" r="48" stroke="currentColor" stroke-width="1.2"/>
+          <text x="70" y="58" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="10" font-weight="700" fill="currentColor" letter-spacing="2">POSTAGE</text>
+          <path d="M48 78c8-10 36-10 44 0" stroke="currentColor" stroke-width="1.4"/>
+          <text x="70" y="98" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="9" fill="currentColor">PAID</text>
+        </svg>
+        <svg class="ink-postmark ink-postmark-5" viewBox="0 0 120 120" fill="none">
+          <circle cx="60" cy="60" r="52" stroke="currentColor" stroke-width="1.6"/>
+          <text x="60" y="48" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="9" font-weight="700" fill="currentColor" letter-spacing="1">RECEIVED</text>
+          <text x="60" y="68" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="12" font-weight="700" fill="currentColor">12 JUL</text>
+          <text x="60" y="86" text-anchor="middle" font-family="Courier New, Courier, monospace" font-size="10" fill="currentColor">U.S.P.O.</text>
+        </svg>
+      </div>
+
       <div class="hero-container-stacked">
         
         <!-- Centered Visual Collage -->
@@ -145,104 +196,137 @@
             <div class="polaroid-caption">TOUR BUS</div>
           </div>
 
-          <!-- Scattered Stamps (using global SVG mask) -->
-          <!-- Stamp 1 (Eiffel Tower/Paris - Bottom Left) -->
+          <!-- Vintage USA travel stamps (parks, states, cities) -->
+          <!-- Stamp 1: Grand Canyon, Arizona -->
           <div class="scattered-stamp-stacked stamp-stacked-1" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#fff5f2" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#d25d43" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" mask="url(#stamp-mask-global)" opacity="0.85">
-                <path d="M40,115 L52,50 L60,25 L68,50 L80,115" stroke-width="2" />
-                <path d="M46,115 Q60,95 74,115" />
-                <path d="M50,90 Q60,82 70,90" />
-                <path d="M52,65 Q60,60 68,65" />
-                <line x1="47" y1="90" x2="73" y2="90" stroke-width="1.5" />
-                <line x1="51" y1="65" x2="69" y2="65" stroke-width="1.5" />
-                <line x1="53" y1="45" x2="67" y2="45" />
-                <line x1="56" y1="30" x2="64" y2="30" />
-                <path d="M52,65 L70,90 M68,65 L50,90 M47,90 L73,115 M73,90 L47,115" stroke-width="0.8" />
-                <line x1="60" y1="25" x2="60" y2="12" stroke-width="2" />
+              <rect width="120" height="150" fill="#f7ebe3" mask="url(#stamp-mask-global)" />
+              <rect x="8" y="8" width="104" height="134" fill="none" stroke="#c45a3a" stroke-width="1.2" mask="url(#stamp-mask-global)" opacity="0.55"/>
+              <text x="60" y="20" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="700" fill="#c45a3a" text-anchor="middle" letter-spacing="1.2" mask="url(#stamp-mask-global)">U.S. POSTAGE</text>
+              <g mask="url(#stamp-mask-global)">
+                <!-- Canyon strata -->
+                <path d="M14 108 L28 72 L42 88 L58 48 L74 78 L90 42 L106 108 Z" fill="#e8b89a" stroke="#b34a2e" stroke-width="1.2"/>
+                <path d="M14 108 L28 86 L42 98 L58 70 L74 92 L90 66 L106 108 Z" fill="#d98a62" stroke="#b34a2e" stroke-width="0.8"/>
+                <path d="M14 108 L30 98 L48 104 L66 90 L84 102 L106 108 Z" fill="#c45a3a" opacity="0.9"/>
+                <path d="M14 108 H106 V118 H14 Z" fill="#8f3d28"/>
+                <!-- River -->
+                <path d="M48 108 Q60 102 72 108" fill="none" stroke="#6a9bb8" stroke-width="1.5"/>
+                <!-- Sun -->
+                <circle cx="92" cy="34" r="7" fill="#e8c17a" stroke="#c45a3a" stroke-width="0.8"/>
               </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#d25d43" text-anchor="middle" letter-spacing="1">PARIS 1925</text>
+              <text x="14" y="34" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#c45a3a" mask="url(#stamp-mask-global)">4¢</text>
+              <text x="60" y="128" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="700" fill="#8f3d28" text-anchor="middle" letter-spacing="0.5" mask="url(#stamp-mask-global)">GRAND CANYON</text>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="600" fill="#c45a3a" text-anchor="middle" letter-spacing="1" mask="url(#stamp-mask-global)">ARIZONA</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
 
-          <!-- Stamp 2 (Italian Coast - Center) -->
+          <!-- Stamp 2: Yellowstone, Wyoming -->
           <div class="scattered-stamp-stacked stamp-stacked-2" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#fcf9ec" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#b09347" stroke-width="1.5" mask="url(#stamp-mask-global)" opacity="0.85">
-                <circle cx="60" cy="50" r="18" stroke-dasharray="2,2" />
-                <circle cx="60" cy="50" r="12" />
-                <path d="M20,95 Q30,90 40,95 T60,95 T80,95 T100,95" stroke-width="1" />
-                <path d="M15,103 Q27,99 40,103 T65,103 T90,103 T105,103" stroke-width="1" />
-                <path d="M50,90 L70,90 L67,95 L53,95 Z" fill="#b09347" />
-                <path d="M60,90 L60,65 L50,85 Z" fill="#b09347" />
-                <path d="M62,90 L62,70 L70,87 Z" />
+              <rect width="120" height="150" fill="#eef6f0" mask="url(#stamp-mask-global)" />
+              <rect x="8" y="8" width="104" height="134" fill="none" stroke="#3d7a58" stroke-width="1.2" mask="url(#stamp-mask-global)" opacity="0.55"/>
+              <text x="60" y="20" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="700" fill="#3d7a58" text-anchor="middle" letter-spacing="1.2" mask="url(#stamp-mask-global)">U.S. POSTAGE</text>
+              <g mask="url(#stamp-mask-global)">
+                <!-- Forest base -->
+                <path d="M16 112 L30 78 L38 98 L50 62 L62 90 L74 55 L86 88 L98 70 L106 112 Z" fill="#b7d4bc" stroke="#3d7a58" stroke-width="1"/>
+                <!-- Geyser pool -->
+                <ellipse cx="60" cy="108" rx="28" ry="8" fill="#7eb8c9" stroke="#2f6a8a" stroke-width="1"/>
+                <ellipse cx="60" cy="108" rx="16" ry="4.5" fill="#c5e8ef"/>
+                <!-- Geyser plume -->
+                <path d="M54 108 C50 88 46 70 52 48 C56 58 58 72 60 88 C62 72 64 56 68 48 C74 70 70 90 66 108 Z" fill="#dfeff3" stroke="#2f6a8a" stroke-width="1.1"/>
+                <path d="M56 70 C54 58 58 48 60 42 C62 50 66 58 64 70" fill="none" stroke="#7eb8c9" stroke-width="1"/>
+                <!-- Pines -->
+                <path d="M24 112 L28 96 L32 112 Z M88 112 L92 94 L96 112 Z" fill="#3d7a58"/>
               </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#b09347" text-anchor="middle" letter-spacing="1">ITALIAN COAST</text>
+              <text x="14" y="34" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#3d7a58" mask="url(#stamp-mask-global)">5¢</text>
+              <text x="60" y="128" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="700" fill="#2f5a44" text-anchor="middle" letter-spacing="0.5" mask="url(#stamp-mask-global)">YELLOWSTONE</text>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="600" fill="#3d7a58" text-anchor="middle" letter-spacing="1" mask="url(#stamp-mask-global)">WYOMING</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
 
-          <!-- Stamp 3 (Top Right Polaroid overlap) -->
+          <!-- Stamp 3: Golden Gate, California -->
           <div class="scattered-stamp-stacked stamp-stacked-3" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#f2f7fc" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#4275a4" stroke-width="1.5" stroke-linecap="round" mask="url(#stamp-mask-global)" opacity="0.85">
-                <path d="M20,95 C25,85 45,85 50,95 C55,88 75,88 80,95" stroke-width="1" />
-                <path d="M40,110 C45,103 60,103 65,110 C70,105 85,105 90,110" stroke-width="1" />
-                <g transform="translate(60, 55) rotate(-25)">
-                  <path d="M-30,0 C-10,-5 10,-5 25,0 C15,3 -15,3 -30,0 Z" fill="#4275a4" />
-                  <path d="M-25,0 L-32,-10 L-28,-10 L-20,0 Z" fill="#4275a4" />
-                  <path d="M-5,-2 L0,-22 L8,-22 L3,-2 Z" fill="#4275a4" />
-                  <path d="M-5,2 L-2,15 L5,15 Z" fill="#4275a4" />
-                  <line x1="27" y1="-8" x2="27" y2="8" stroke-width="1.5" />
-                </g>
+              <rect width="120" height="150" fill="#eef4fb" mask="url(#stamp-mask-global)" />
+              <rect x="8" y="8" width="104" height="134" fill="none" stroke="#3d6fa8" stroke-width="1.2" mask="url(#stamp-mask-global)" opacity="0.55"/>
+              <text x="60" y="20" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="700" fill="#3d6fa8" text-anchor="middle" letter-spacing="1.2" mask="url(#stamp-mask-global)">U.S. POSTAGE</text>
+              <g mask="url(#stamp-mask-global)">
+                <!-- Sky / water -->
+                <rect x="12" y="40" width="96" height="72" fill="#d4e4f5" opacity="0.55"/>
+                <path d="M12 100 Q40 92 60 98 T108 96 L108 112 L12 112 Z" fill="#7aa3c9" opacity="0.75"/>
+                <!-- Bridge towers -->
+                <path d="M34 112 V48 H40 V112 Z M80 112 V48 H86 V112 Z" fill="#c45a3a"/>
+                <path d="M32 48 H42 V54 H32 Z M78 48 H88 V54 H78 Z" fill="#a8442c"/>
+                <!-- Suspension cables -->
+                <path d="M14 78 Q37 42 60 42 Q83 42 106 78" fill="none" stroke="#c45a3a" stroke-width="1.4"/>
+                <path d="M14 84 Q37 52 60 52 Q83 52 106 84" fill="none" stroke="#c45a3a" stroke-width="0.9"/>
+                <!-- Deck -->
+                <path d="M14 86 H106" stroke="#a8442c" stroke-width="2.2"/>
+                <!-- Hangers -->
+                <path d="M28 70 V86 M44 56 V86 M60 52 V86 M76 56 V86 M92 70 V86" stroke="#c45a3a" stroke-width="0.7"/>
               </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4275a4" text-anchor="middle" letter-spacing="1">USA POST</text>
+              <text x="14" y="34" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#3d6fa8" mask="url(#stamp-mask-global)">3¢</text>
+              <text x="60" y="128" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="700" fill="#2c5580" text-anchor="middle" letter-spacing="0.3" mask="url(#stamp-mask-global)">GOLDEN GATE</text>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="600" fill="#3d6fa8" text-anchor="middle" letter-spacing="1" mask="url(#stamp-mask-global)">CALIFORNIA</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
 
-          <!-- Stamp 4 (Montana - Bottom Right 1) -->
+          <!-- Stamp 4: Yosemite / Half Dome, California -->
           <div class="scattered-stamp-stacked stamp-stacked-4" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#f0f7f2" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#3b7454" stroke-width="1.5" stroke-linejoin="round" mask="url(#stamp-mask-global)" opacity="0.85">
-                <path d="M15,95 L40,55 L60,80 L85,45 L105,95 Z" stroke-width="2" />
-                <path d="M40,55 L50,85 L85,45" />
-                <line x1="30" y1="71" x2="35" y2="80" stroke-width="1" />
-                <line x1="24" y1="81" x2="29" y2="90" stroke-width="1" />
-                <line x1="75" y1="61" x2="80" y2="70" stroke-width="1" />
-                <line x1="68" y1="73" x2="73" y2="82" stroke-width="1" />
-                <path d="M30,105 L35,95 L40,105 Z M35,95 L35,110" fill="#3b7454" stroke-width="1" />
-                <path d="M80,108 L85,98 L90,108 Z M85,98 L85,112" fill="#3b7454" stroke-width="1" />
-                <path d="M55,102 L60,90 L65,102 Z M60,90 L60,108" fill="#3b7454" stroke-width="1" />
+              <rect width="120" height="150" fill="#eef5ef" mask="url(#stamp-mask-global)" />
+              <rect x="8" y="8" width="104" height="134" fill="none" stroke="#3b7454" stroke-width="1.2" mask="url(#stamp-mask-global)" opacity="0.55"/>
+              <text x="60" y="20" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="700" fill="#3b7454" text-anchor="middle" letter-spacing="1.2" mask="url(#stamp-mask-global)">U.S. POSTAGE</text>
+              <g mask="url(#stamp-mask-global)">
+                <!-- Sky -->
+                <rect x="12" y="36" width="96" height="78" fill="#d9ebe0" opacity="0.5"/>
+                <!-- Half Dome silhouette -->
+                <path d="M28 112 L36 78 L48 58 C56 48 68 42 78 48 L86 58 L94 78 L100 112 Z" fill="#7fa88a" stroke="#2f5a44" stroke-width="1.2"/>
+                <path d="M70 52 C78 54 86 64 90 78 L100 112 L70 112 Z" fill="#5d8a6c"/>
+                <!-- Valley floor -->
+                <path d="M16 112 H104 V118 H16 Z" fill="#3b7454"/>
+                <!-- Pines -->
+                <path d="M22 112 L26 92 L30 112 Z M34 112 L38 96 L42 112 Z M96 112 L100 94 L104 112 Z" fill="#2f5a44"/>
+                <!-- Waterfall line -->
+                <path d="M52 70 L50 112" stroke="#8ec4d4" stroke-width="1.4" opacity="0.85"/>
               </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#3b7454" text-anchor="middle" letter-spacing="1">MONTANA</text>
+              <text x="14" y="34" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#3b7454" mask="url(#stamp-mask-global)">5¢</text>
+              <text x="60" y="128" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="700" fill="#2f5a44" text-anchor="middle" letter-spacing="0.5" mask="url(#stamp-mask-global)">YOSEMITE</text>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="600" fill="#3b7454" text-anchor="middle" letter-spacing="0.8" mask="url(#stamp-mask-global)">NAT'L PARK</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
 
-          <!-- Stamp 5 (New York - Bottom Right 2) -->
+          <!-- Stamp 5: Statue of Liberty, New York -->
           <div class="scattered-stamp-stacked stamp-stacked-5" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#faf2ed" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#bf6a45" stroke-width="1.5" stroke-linejoin="round" mask="url(#stamp-mask-global)" opacity="0.85">
-                <path d="M30,50 L15,40 M35,40 L22,25 M60,30 L60,10 M85,40 L98,25 M90,50 L105,40" stroke-width="1" stroke-dasharray="2,2" />
-                <rect x="35" y="90" width="50" height="25" />
-                <rect x="42" y="75" width="36" height="15" />
-                <rect x="47" y="55" width="26" height="20" />
-                <rect x="52" y="35" width="16" height="20" />
-                <line x1="60" y1="35" x2="60" y2="15" stroke-width="2" />
-                <line x1="55" y1="40" x2="55" y2="50" stroke-width="1" />
-                <line x1="65" y1="40" x2="65" y2="50" stroke-width="1" />
-                <line x1="52" y1="60" x2="52" y2="70" stroke-width="1" />
-                <line x1="60" y1="60" x2="60" y2="70" stroke-width="1" />
-                <line x1="68" y1="60" x2="68" y2="70" stroke-width="1" />
+              <rect width="120" height="150" fill="#f4f0ea" mask="url(#stamp-mask-global)" />
+              <rect x="8" y="8" width="104" height="134" fill="none" stroke="#5a6e8c" stroke-width="1.2" mask="url(#stamp-mask-global)" opacity="0.55"/>
+              <text x="60" y="20" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="700" fill="#5a6e8c" text-anchor="middle" letter-spacing="1.2" mask="url(#stamp-mask-global)">U.S. POSTAGE</text>
+              <g mask="url(#stamp-mask-global)">
+                <!-- Harbor water -->
+                <path d="M12 108 H108 V118 H12 Z" fill="#8fadb8" opacity="0.55"/>
+                <path d="M16 108 Q40 102 60 108 T104 106" fill="none" stroke="#6a8fa0" stroke-width="1"/>
+                <!-- Pedestal -->
+                <path d="M44 108 L48 88 H72 L76 108 Z" fill="#c4b8a4" stroke="#5a6e8c" stroke-width="1"/>
+                <rect x="50" y="92" width="20" height="10" fill="none" stroke="#5a6e8c" stroke-width="0.8"/>
+                <!-- Robe / body -->
+                <path d="M52 88 C48 78 48 66 52 56 L60 52 L68 56 C72 66 72 78 68 88 Z" fill="#6fa08c" stroke="#3d6a5a" stroke-width="1.1"/>
+                <!-- Raised arm + torch -->
+                <path d="M68 60 L78 42" stroke="#3d6a5a" stroke-width="2" stroke-linecap="round"/>
+                <path d="M74 36 L78 42 L82 36 L78 30 Z" fill="#e8c17a" stroke="#b08930" stroke-width="0.8"/>
+                <!-- Crown spikes -->
+                <path d="M54 52 L52 44 M58 50 L58 40 M62 50 L64 40 M66 52 L68 44" stroke="#3d6a5a" stroke-width="1.2" stroke-linecap="round"/>
+                <!-- Tablet arm -->
+                <path d="M50 68 L44 74" stroke="#3d6a5a" stroke-width="1.5" stroke-linecap="round"/>
+                <rect x="38" y="72" width="8" height="10" fill="#c4b8a4" stroke="#5a6e8c" stroke-width="0.7"/>
               </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#bf6a45" text-anchor="middle" letter-spacing="1">NEW YORK</text>
+              <text x="14" y="34" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#5a6e8c" mask="url(#stamp-mask-global)">3¢</text>
+              <text x="60" y="128" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="700" fill="#3d4f6a" text-anchor="middle" letter-spacing="0.3" mask="url(#stamp-mask-global)">STATUE OF LIBERTY</text>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="600" fill="#5a6e8c" text-anchor="middle" letter-spacing="1" mask="url(#stamp-mask-global)">NEW YORK</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
@@ -318,22 +402,29 @@
     <!-- Services / How We Help Section -->
     <section class="cream-section services-section" id="services">
       <!-- Scattered Stamp 2 (Autumn Road) -->
-      <div class="scattered-stamp stamp-services-1">
+      <!-- Route 66 / USA highway travel stamp -->
+      <div class="scattered-stamp stamp-services-1" aria-hidden="true">
         <svg viewBox="0 0 120 150">
-          <defs>
-            <mask id="stamp-mask-services">
-              <rect width="120" height="150" fill="white" rx="4" />
-              <!-- Top and Bottom Edge Perforations -->
-              <circle cx="15" cy="0" r="4" fill="black" /><circle cx="35" cy="0" r="4" fill="black" /><circle cx="55" cy="0" r="4" fill="black" /><circle cx="75" cy="0" r="4" fill="black" /><circle cx="95" cy="0" r="4" fill="black" /><circle cx="115" cy="0" r="4" fill="black" />
-              <circle cx="15" cy="150" r="4" fill="black" /><circle cx="35" cy="150" r="4" fill="black" /><circle cx="55" cy="150" r="4" fill="black" /><circle cx="75" cy="150" r="4" fill="black" /><circle cx="95" cy="150" r="4" fill="black" /><circle cx="115" cy="150" r="4" fill="black" />
-              <!-- Left and Right Edge Perforations -->
-              <circle cx="0" cy="20" r="4" fill="black" /><circle cx="0" cy="40" r="4" fill="black" /><circle cx="0" cy="60" r="4" fill="black" /><circle cx="0" cy="80" r="4" fill="black" /><circle cx="0" cy="100" r="4" fill="black" /><circle cx="0" cy="120" r="4" fill="black" /><circle cx="0" cy="140" r="4" fill="black" />
-              <circle cx="120" cy="20" r="4" fill="black" /><circle cx="120" cy="40" r="4" fill="black" /><circle cx="120" cy="60" r="4" fill="black" /><circle cx="120" cy="80" r="4" fill="black" /><circle cx="120" cy="100" r="4" fill="black" /><circle cx="120" cy="120" r="4" fill="black" /><circle cx="120" cy="140" r="4" fill="black" />
-            </mask>
-          </defs>
-          <rect width="120" height="150" fill="#fffaf0" mask="url(#stamp-mask-services)" />
-          <image href="images/autumn_road.jpg" x="8" y="8" width="104" height="114" preserveAspectRatio="xMidYMid slice" mask="url(#stamp-mask-services)" />
-          <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#8a9860" text-anchor="middle" letter-spacing="1">WYWH SOCIAL</text>
+          <rect width="120" height="150" fill="#f7f0e4" mask="url(#stamp-mask-global)" />
+          <rect x="8" y="8" width="104" height="134" fill="none" stroke="#b06a2e" stroke-width="1.2" mask="url(#stamp-mask-global)" opacity="0.55"/>
+          <text x="60" y="20" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="700" fill="#b06a2e" text-anchor="middle" letter-spacing="1.2" mask="url(#stamp-mask-global)">U.S. POSTAGE</text>
+          <g mask="url(#stamp-mask-global)">
+            <!-- Desert road -->
+            <path d="M12 112 H108 V118 H12 Z" fill="#c4a574"/>
+            <path d="M48 112 L54 58 L66 58 L72 112 Z" fill="#6a6a6a"/>
+            <path d="M58 58 L60 112" stroke="#e8d5a0" stroke-width="1.2" stroke-dasharray="3 3"/>
+            <!-- Shield -->
+            <path d="M40 42 L80 42 L84 58 L80 88 L60 98 L40 88 L36 58 Z" fill="#c45a3a" stroke="#8f3d28" stroke-width="1.2"/>
+            <path d="M44 48 H76 V56 H44 Z" fill="#f7f0e4"/>
+            <text x="60" y="54" font-family="'Poppins', sans-serif" font-size="6" font-weight="700" fill="#c45a3a" text-anchor="middle">ROUTE</text>
+            <text x="60" y="78" font-family="'Poppins', sans-serif" font-size="18" font-weight="700" fill="#f7f0e4" text-anchor="middle">66</text>
+            <!-- Cacti -->
+            <path d="M24 112 V78 M20 90 H28 M22 84 V90 M26 86 V92" stroke="#3b7454" stroke-width="2" stroke-linecap="round"/>
+            <path d="M96 112 V82 M92 94 H100" stroke="#3b7454" stroke-width="2" stroke-linecap="round"/>
+          </g>
+          <text x="14" y="34" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#b06a2e" mask="url(#stamp-mask-global)">4¢</text>
+          <text x="60" y="128" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="700" fill="#8f4e1e" text-anchor="middle" letter-spacing="0.5" mask="url(#stamp-mask-global)">ROUTE 66</text>
+          <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="600" fill="#b06a2e" text-anchor="middle" letter-spacing="1" mask="url(#stamp-mask-global)">USA HIGHWAY</text>
         </svg>
         <div class="stamp-cancellation"></div>
       </div>
@@ -393,18 +484,28 @@
     <section class="about-section" id="about">
       <div class="about-container">
         <div class="about-visual">
-          <!-- Scattered Stamp 4 (Ashley Tropicana Sign) -->
+          <!-- Las Vegas / Nevada travel stamp -->
           <div class="scattered-stamp stamp-about-1" aria-hidden="true">
             <svg viewBox="0 0 120 150">
-              <rect width="120" height="150" fill="#fcf9ec" mask="url(#stamp-mask-global)" />
-              <g fill="none" stroke="#b09347" stroke-width="1.5" mask="url(#stamp-mask-global)" opacity="0.85">
-                <circle cx="60" cy="65" r="30" />
-                <circle cx="60" cy="65" r="24" stroke-dasharray="2,2" />
-                <text x="60" y="60" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#b09347" text-anchor="middle">WYWH</text>
-                <text x="60" y="72" font-family="'Poppins', sans-serif" font-size="6" fill="#b09347" text-anchor="middle">CREATIVE</text>
-                <text x="60" y="82" font-family="'Poppins', sans-serif" font-size="5" fill="#b09347" text-anchor="middle">★ USA ★</text>
+              <rect width="120" height="150" fill="#faf3e6" mask="url(#stamp-mask-global)" />
+              <rect x="8" y="8" width="104" height="134" fill="none" stroke="#b08930" stroke-width="1.2" mask="url(#stamp-mask-global)" opacity="0.55"/>
+              <text x="60" y="20" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="700" fill="#b08930" text-anchor="middle" letter-spacing="1.2" mask="url(#stamp-mask-global)">U.S. POSTAGE</text>
+              <g mask="url(#stamp-mask-global)">
+                <!-- Desert sky -->
+                <rect x="12" y="36" width="96" height="76" fill="#f0d9a8" opacity="0.45"/>
+                <!-- Mountains -->
+                <path d="M12 100 L30 70 L48 92 L66 58 L84 86 L108 64 L108 112 L12 112 Z" fill="#d2b48c" stroke="#8a6a30" stroke-width="1"/>
+                <!-- Neon arch suggestion -->
+                <path d="M34 100 Q60 48 86 100" fill="none" stroke="#c45a3a" stroke-width="2.2"/>
+                <path d="M40 100 Q60 58 80 100" fill="none" stroke="#e8c17a" stroke-width="1.2"/>
+                <text x="60" y="88" font-family="'Poppins', sans-serif" font-size="6" font-weight="700" fill="#8a4a20" text-anchor="middle">LAS VEGAS</text>
+                <!-- Palm -->
+                <path d="M22 112 V84" stroke="#3b7454" stroke-width="2"/>
+                <path d="M22 88 C12 82 12 74 18 78 M22 86 C32 80 34 72 28 78 M22 84 C14 70 24 68 24 78 M22 84 C30 70 34 76 26 80" fill="none" stroke="#3b7454" stroke-width="1.3" stroke-linecap="round"/>
               </g>
-              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#b09347" text-anchor="middle" letter-spacing="1">ABOUT ASHLEY</text>
+              <text x="14" y="34" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#b08930" mask="url(#stamp-mask-global)">3¢</text>
+              <text x="60" y="128" font-family="'Poppins', sans-serif" font-size="6.5" font-weight="700" fill="#8a6a30" text-anchor="middle" letter-spacing="0.5" mask="url(#stamp-mask-global)">LAS VEGAS</text>
+              <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="600" fill="#b08930" text-anchor="middle" letter-spacing="1" mask="url(#stamp-mask-global)">NEVADA</text>
             </svg>
             <div class="stamp-cancellation"></div>
           </div>
@@ -436,18 +537,27 @@
 
     <!-- Case Studies / Work Section -->
     <section class="cream-section work-section" id="work">
-      <!-- Scattered Stamp 3 (Washington Monument) -->
+      <!-- Mount Rushmore / South Dakota travel stamp -->
       <div class="scattered-stamp stamp-work-1" aria-hidden="true">
         <svg viewBox="0 0 120 150">
-          <rect width="120" height="150" fill="#f2f7fc" mask="url(#stamp-mask-global)" />
-          <g fill="none" stroke="#4275a4" stroke-width="1.5" mask="url(#stamp-mask-global)" opacity="0.85">
-            <path d="M30,35 L90,35 L90,95 L30,95 Z" />
-            <path d="M35,40 L85,40 L85,90 L35,90 Z" stroke-dasharray="2,2" />
-            <text x="60" y="58" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4275a4" text-anchor="middle">WYWH</text>
-            <text x="60" y="70" font-family="'Poppins', sans-serif" font-size="10" font-weight="700" fill="#4275a4" text-anchor="middle">100%</text>
-            <text x="60" y="82" font-family="'Poppins', sans-serif" font-size="6" fill="#4275a4" text-anchor="middle">RESULTS</text>
+          <rect width="120" height="150" fill="#eef3f8" mask="url(#stamp-mask-global)" />
+          <rect x="8" y="8" width="104" height="134" fill="none" stroke="#4a6280" stroke-width="1.2" mask="url(#stamp-mask-global)" opacity="0.55"/>
+          <text x="60" y="20" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="700" fill="#4a6280" text-anchor="middle" letter-spacing="1.2" mask="url(#stamp-mask-global)">U.S. POSTAGE</text>
+          <g mask="url(#stamp-mask-global)">
+            <!-- Granite mountain -->
+            <path d="M14 112 L22 70 L38 52 L54 60 L70 48 L86 58 L98 72 L108 112 Z" fill="#b8c4d0" stroke="#4a6280" stroke-width="1.1"/>
+            <!-- Four simplified heads as ovals/shoulders -->
+            <ellipse cx="36" cy="68" rx="7" ry="9" fill="#d5dde6" stroke="#3d5068" stroke-width="0.9"/>
+            <ellipse cx="52" cy="64" rx="7" ry="9" fill="#d5dde6" stroke="#3d5068" stroke-width="0.9"/>
+            <ellipse cx="68" cy="62" rx="7" ry="9" fill="#d5dde6" stroke="#3d5068" stroke-width="0.9"/>
+            <ellipse cx="84" cy="68" rx="7" ry="9" fill="#d5dde6" stroke="#3d5068" stroke-width="0.9"/>
+            <!-- Shoulders/robes -->
+            <path d="M28 78 Q36 74 44 78 L44 96 L28 100 Z M44 76 Q52 70 60 76 L60 94 L44 96 Z M60 74 Q68 68 76 74 L76 94 L60 94 Z M76 78 Q84 74 92 80 L92 100 L76 96 Z" fill="#9aabbc" stroke="#3d5068" stroke-width="0.7"/>
+            <path d="M14 112 H108 V118 H14 Z" fill="#3d5068"/>
           </g>
-          <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="7" font-weight="700" fill="#4275a4" text-anchor="middle" letter-spacing="1">POSTAL SERVICE</text>
+          <text x="14" y="34" font-family="'Poppins', sans-serif" font-size="8" font-weight="700" fill="#4a6280" mask="url(#stamp-mask-global)">5¢</text>
+          <text x="60" y="128" font-family="'Poppins', sans-serif" font-size="6" font-weight="700" fill="#3d5068" text-anchor="middle" letter-spacing="0.3" mask="url(#stamp-mask-global)">MT. RUSHMORE</text>
+          <text x="60" y="138" font-family="'Poppins', sans-serif" font-size="5.5" font-weight="600" fill="#4a6280" text-anchor="middle" letter-spacing="0.8" mask="url(#stamp-mask-global)">SOUTH DAKOTA</text>
         </svg>
         <div class="stamp-cancellation"></div>
       </div>

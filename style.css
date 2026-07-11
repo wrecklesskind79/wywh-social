@@ -11,16 +11,16 @@
 
 :root {
   /* Color Palette */
-  --cream: #f4eee1;
-  --cream-light: #fbf8f3;
+  --cream: #e7d3ad;
+  --cream-light: #f0e0c1;
   --navy: #1c2b4a;
   --navy-soft: #384c75;
   --coral: #d8734c;
   --coral-dark: #c05c33;
   --olive: #8a9860;
   --sky: #8fadb8;
-  --paper: #fffaf0;
-  --line: #e4d8c1;
+  --paper: #f8edd5;
+  --line: #d4bb91;
   --white: #ffffff;
   
   /* Shadows */
@@ -39,10 +39,30 @@ html {
 body {
   font-family: 'Poppins', sans-serif;
   background-color: var(--cream);
+  background-image:
+    radial-gradient(circle at 12% 8%, rgba(174, 101, 48, 0.12), transparent 26%),
+    radial-gradient(circle at 88% 34%, rgba(128, 89, 43, 0.09), transparent 30%),
+    linear-gradient(90deg, rgba(91, 52, 24, 0.10), transparent 8%, transparent 92%, rgba(91, 52, 24, 0.11)),
+    repeating-radial-gradient(circle at 30% 20%, rgba(78, 58, 34, 0.025) 0 0.7px, transparent 0.8px 4px);
   color: var(--navy);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
+  position: relative;
+}
+
+/* A restrained postcard patina: warm paper edges without muddying the content. */
+body::before {
+  content: '';
+  position: fixed;
+  inset: 0;
+  z-index: 9998;
+  pointer-events: none;
+  box-shadow:
+    inset 0 0 115px rgba(82, 45, 19, 0.20),
+    inset 0 0 32px rgba(105, 62, 27, 0.12),
+    inset 0 0 7px rgba(74, 39, 17, 0.16);
+  mix-blend-mode: multiply;
 }
 
 /* Typography */
@@ -153,7 +173,7 @@ img {
    Header & Navigation
    ------------------------------------------------------------- */
 header {
-  background-color: rgba(251, 248, 243, 0.85);
+  background-color: rgba(240, 224, 193, 0.90);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--line);
@@ -271,13 +291,130 @@ header {
 }
 
 /* -------------------------------------------------------------
-   Hero Section
+   Hero Section — vintage postcard face
+   Paper tone + edge frame + ink postmarks from stamp-sheet refs
    ------------------------------------------------------------- */
 .hero-section {
-  padding: 60px 0 100px;
+  --postcard: #e6d0a4;
+  --postcard-edge: rgba(92, 54, 24, 0.22);
+  --postcard-ink: rgba(52, 38, 24, 0.55);
+  padding: 72px 0 110px;
   position: relative;
-  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%231c2b4a" stroke-width="1.2" opacity="0.045"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
-  background-repeat: repeat;
+  overflow: hidden;
+  /* Solid postcard stock (matches aged kraft / stamp-sheet paper) */
+  background-color: var(--postcard);
+  background-image:
+    /* faint fiber / grain */
+    radial-gradient(ellipse at 18% 22%, rgba(255, 248, 230, 0.35), transparent 42%),
+    radial-gradient(ellipse at 82% 70%, rgba(120, 78, 40, 0.08), transparent 46%),
+    linear-gradient(180deg, rgba(255, 250, 235, 0.18), transparent 28%, transparent 72%, rgba(110, 70, 35, 0.07)),
+    repeating-radial-gradient(circle at 40% 30%, rgba(78, 52, 28, 0.03) 0 0.6px, transparent 0.7px 3.5px);
+  /* Lift off the page like a physical card */
+  margin: 18px 22px 0;
+  border-radius: 3px;
+  border: 1px solid var(--postcard-edge);
+  box-shadow:
+    0 1px 0 rgba(255, 252, 245, 0.45) inset,
+    0 -1px 0 rgba(90, 50, 20, 0.08) inset,
+    0 14px 36px rgba(28, 43, 74, 0.12),
+    0 3px 8px rgba(28, 43, 74, 0.08);
+}
+
+/* Outer double-line postcard frame */
+.hero-section::before {
+  content: '';
+  position: absolute;
+  inset: 12px;
+  border: 1.5px solid rgba(72, 44, 22, 0.16);
+  border-radius: 2px;
+  pointer-events: none;
+  z-index: 6;
+  box-shadow: 0 0 0 5px rgba(230, 208, 164, 0.01);
+}
+
+/* Soft worn edge + slight corner age */
+.hero-section::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 6;
+  border-radius: inherit;
+  box-shadow:
+    inset 0 0 0 1px rgba(255, 248, 230, 0.25),
+    inset 0 0 48px rgba(90, 52, 22, 0.10),
+    inset 0 0 14px rgba(70, 40, 16, 0.08);
+  background:
+    radial-gradient(ellipse at 0% 0%, rgba(90, 50, 20, 0.10), transparent 28%),
+    radial-gradient(ellipse at 100% 0%, rgba(90, 50, 20, 0.08), transparent 26%),
+    radial-gradient(ellipse at 0% 100%, rgba(90, 50, 20, 0.09), transparent 28%),
+    radial-gradient(ellipse at 100% 100%, rgba(90, 50, 20, 0.10), transparent 30%);
+}
+
+/* Scattered ink postmarks on the postcard face */
+.hero-ink-layer {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.ink-postmark {
+  position: absolute;
+  color: var(--postcard-ink);
+  opacity: 0.22;
+  mix-blend-mode: multiply;
+}
+
+/* A few marks punched darker so the ink feels uneven / real */
+.ink-postmark-1 {
+  width: 210px;
+  height: 152px;
+  top: 5%;
+  right: 2%;
+  transform: rotate(10deg);
+  opacity: 0.36; /* London + wavy killer bars */
+  color: rgba(42, 28, 16, 0.72);
+}
+
+.ink-postmark-2 {
+  width: 140px;
+  height: 140px;
+  bottom: 8%;
+  left: 3%;
+  transform: rotate(-18deg);
+  opacity: 0.34; /* North Pole — darker cancel */
+  color: rgba(42, 28, 16, 0.70);
+}
+
+.ink-postmark-3 {
+  width: 220px;
+  height: 110px;
+  top: 48%;
+  left: -2%;
+  transform: rotate(-14deg);
+  opacity: 0.28; /* pure curvy cancel band — readable but secondary */
+  color: rgba(42, 28, 16, 0.68);
+}
+
+.ink-postmark-4 {
+  width: 126px;
+  height: 126px;
+  top: 12%;
+  left: 18%;
+  transform: rotate(-6deg);
+  opacity: 0.14; /* Postage stays light */
+}
+
+.ink-postmark-5 {
+  width: 110px;
+  height: 110px;
+  bottom: 14%;
+  right: 10%;
+  transform: rotate(22deg);
+  opacity: 0.30; /* Received — medium-dark accent */
+  color: rgba(48, 32, 18, 0.68);
 }
 
 .hero-container-stacked {
@@ -287,6 +424,8 @@ header {
   display: flex;
   flex-direction: column;
   align-items: center;
+  position: relative;
+  z-index: 2;
 }
 
 /* Center Visual Collage Area */
@@ -735,6 +874,8 @@ header {
   padding: 100px 0;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%231c2b4a" stroke-width="1.2" opacity="0.045"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
   background-repeat: repeat;
+  background-size: 560px 560px;
+  background-position: -110px 60px;
 }
 
 .service-card {
@@ -760,10 +901,12 @@ header {
    About Section (Ashley)
    ------------------------------------------------------------- */
 .about-section {
-  background-color: #e7ede9; /* Subtle olive-gray layout background */
+  background-color: #ddc9a4; /* Warm aged-postcard paper */
   padding: 100px 0;
   background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%231c2b4a" stroke-width="1.2" opacity="0.045"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
   background-repeat: repeat;
+  background-size: 610px 610px;
+  background-position: 170px -80px;
 }
 
 .about-container {
@@ -1725,6 +1868,20 @@ footer {
     gap: 30px;
   }
 
+  .hero-section {
+    margin: 12px 14px 0;
+    padding: 56px 0 88px;
+  }
+
+  .hero-section::before {
+    inset: 9px;
+  }
+
+  .ink-postmark-1 { width: 160px; height: 116px; }
+  .ink-postmark-2 { width: 110px; height: 110px; }
+  .ink-postmark-3 { width: 170px; height: 86px; opacity: 0.22; }
+  .ink-postmark-4 { opacity: 0.10; }
+
   .hero-visual-stacked {
     height: 440px;
     max-width: 700px;
@@ -1766,6 +1923,50 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .hero-section {
+    margin: 8px 8px 0;
+    padding: 48px 0 72px;
+  }
+
+  .hero-section::before {
+    inset: 7px;
+  }
+
+  /* Keep wavy cancels + 1 circle; hide light extras */
+  .ink-postmark-4 {
+    display: none;
+  }
+
+  .ink-postmark-1 {
+    width: 132px;
+    height: 96px;
+    top: 4%;
+    right: 1%;
+  }
+
+  .ink-postmark-2 {
+    width: 88px;
+    height: 88px;
+    bottom: 6%;
+    left: 2%;
+  }
+
+  .ink-postmark-3 {
+    width: 140px;
+    height: 70px;
+    top: auto;
+    bottom: 28%;
+    left: 4%;
+    opacity: 0.24;
+  }
+
+  .ink-postmark-5 {
+    width: 84px;
+    height: 84px;
+    bottom: 18%;
+    right: 4%;
+  }
+
   .hero-visual-stacked {
     height: 350px;
     max-width: 500px;
