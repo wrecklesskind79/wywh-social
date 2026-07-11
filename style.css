@@ -276,6 +276,8 @@ header {
 .hero-section {
   padding: 60px 0 100px;
   position: relative;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%231c2b4a" stroke-width="1.2" opacity="0.045"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
+  background-repeat: repeat;
 }
 
 .hero-container-stacked {
@@ -731,6 +733,8 @@ header {
 .cream-section {
   background-color: var(--cream);
   padding: 100px 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%231c2b4a" stroke-width="1.2" opacity="0.045"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
+  background-repeat: repeat;
 }
 
 .service-card {
@@ -758,6 +762,8 @@ header {
 .about-section {
   background-color: #e7ede9; /* Subtle olive-gray layout background */
   padding: 100px 0;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%231c2b4a" stroke-width="1.2" opacity="0.045"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
+  background-repeat: repeat;
 }
 
 .about-container {
@@ -1136,6 +1142,8 @@ header {
   padding: 100px 24px;
   position: relative;
   overflow: hidden;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="360" height="360" fill="none" stroke="%23ffffff" stroke-width="1.2" opacity="0.025"><circle cx="75" cy="75" r="45" /><circle cx="75" cy="75" r="41" stroke-dasharray="2,2" /><text x="75" y="60" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">LONDON . S.W.</text><text x="75" y="78" font-family="Courier, monospace" font-size="7" text-anchor="middle">12 JULY</text><text x="75" y="92" font-family="Courier, monospace" font-size="8" text-anchor="middle">1957</text><circle cx="270" cy="240" r="38" /><path d="M243,213 l54,54 M243,267 l54,-54" stroke-dasharray="2,2" /><text x="270" y="235" font-family="Courier, monospace" font-size="8" font-weight="bold" text-anchor="middle">NORTH POLE</text><text x="270" y="250" font-family="Courier, monospace" font-size="7" text-anchor="middle">MAY 20 1953</text><path d="M15,280 h75 M15,288 h75 M15,296 h75 M15,304 h75" /><circle cx="210" cy="90" r="28" stroke-dasharray="3,3" /><text x="210" y="93" font-family="Courier, monospace" font-size="7" text-anchor="middle">RECEIVED</text><path d="M280,60 l50,-25 l12,24 l-50,25 z" /><text x="306" y="62" font-family="Courier, monospace" font-size="7" transform="rotate(-26, 306, 62)" text-anchor="middle">AIR MAIL</text></svg>');
+  background-repeat: repeat;
 }
 
 .cta-postmark {
