@@ -517,7 +517,7 @@ header {
 .scattered-stamp-stacked {
   position: absolute;
   width: 110px;
-  height: 138px;
+  height: 74px;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   z-index: 5;
   user-select: none;
@@ -533,6 +533,15 @@ header {
   width: 100%;
   height: 100%;
   display: block;
+  mix-blend-mode: multiply;
+}
+
+.vintage-stamp-image {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  mix-blend-mode: multiply;
 }
 
 /* Coordinates matching the user's reference mockup */
@@ -726,7 +735,7 @@ header {
 .scattered-stamp {
   position: absolute;
   width: 130px;
-  height: 162px;
+  height: 87px;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
   z-index: 5;
   user-select: none;
@@ -741,6 +750,7 @@ header {
   width: 100%;
   height: 100%;
   display: block;
+  mix-blend-mode: multiply;
 }
 
 /* Specific Positions for scattered stamps */
