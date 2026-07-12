@@ -519,13 +519,10 @@ header {
   width: 110px;
   height: 74px;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  z-index: 5;
+  z-index: 0;
+  opacity: 0.42;
+  pointer-events: none;
   user-select: none;
-}
-
-.scattered-stamp-stacked:hover {
-  transform: scale(1.08) rotate(0deg) !important;
-  z-index: 10;
 }
 
 .scattered-stamp-stacked svg,
@@ -737,13 +734,10 @@ header {
   width: 130px;
   height: 87px;
   transition: transform 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-  z-index: 5;
+  z-index: 0;
+  opacity: 0.38;
+  pointer-events: none;
   user-select: none;
-}
-
-.scattered-stamp:hover {
-  transform: scale(1.08) rotate(0deg) !important;
-  z-index: 10;
 }
 
 .scattered-stamp svg {
